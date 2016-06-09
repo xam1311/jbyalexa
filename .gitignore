@@ -1,0 +1,4 @@
+# on ne prend pas le dossier cache
+/.sass-cache/*
+config.rb
+/css/*
