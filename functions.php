@@ -114,7 +114,7 @@ add_action( 'widgets_init', 'jbyalexa_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jbyalexa_scripts() {
-	wp_enqueue_style( 'jbyalexa-style', get_stylesheet_uri() );
+//	wp_enqueue_style( 'jbyalexa-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'jbyalexa-knacss',  get_template_directory_uri() . '/css/knacss.css' );
 
