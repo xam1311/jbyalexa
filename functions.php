@@ -116,7 +116,7 @@ add_action( 'widgets_init', 'jbyalexa_widgets_init' );
 function jbyalexa_scripts() {
 //	wp_enqueue_style( 'jbyalexa-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'jbyalexa-knacss',  get_template_directory_uri() . '/css/knacss.css' );
+	wp_enqueue_style( 'jbyalexa-style',  get_template_directory_uri() . '/css/styles.css' );
 
 	wp_enqueue_script( 'jbyalexa-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
