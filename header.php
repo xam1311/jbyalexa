@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="mam">
 	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'jbyalexa' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
@@ -47,4 +47,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="grid-2-1">
