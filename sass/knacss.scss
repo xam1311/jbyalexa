@@ -49,11 +49,10 @@
 @import "_override-helpers.scss"; // width and spacers helpers
 @import "_override-responsive.scss"; // Responsive Web Design helpers
 
-
 /* ----------------------------- */
 /* ==Own stylesheet              */
 /* ----------------------------- */
 /* Here should go your own CSS styles */
 // You can also link them with a Sass @import
 
-@import "_own-style.scss";
+@import "_own-style.scss"
