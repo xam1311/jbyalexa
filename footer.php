@@ -12,13 +12,16 @@
 ?>
 
 	</div><!-- #content -->
+	<div class="container-fluid" id="footer-nav">
+			<div class="container">
+			<footer>
+				<div class="site-info">
+					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'jbyalexa' ), 'jbyalexa', '<a href="" rel="designer">xam1311</a>' ); ?>
+				</div><!-- .site-info -->
+			</footer>
+		</div>
+	</div>
 
-	<footer>
-		<div class="site-info">
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'jbyalexa' ), 'jbyalexa', '<a href="" rel="designer">xam1311</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

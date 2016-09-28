@@ -1,8 +1,0 @@
-{
-  "in": ["sass/knacss.scss"],
-  "out": "css/styles.css",
-  "browsers": ["last 2 versions"],
-  "sass": true,
-  "autoprefixer": true,
-  "minifier":true
-}

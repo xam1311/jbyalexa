@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="flex-item-fluid w50">
+	<div id="primary" class="">
 		<main id="main" class="site-main" role="main">
 
 		<?php

@@ -1,0 +1,40 @@
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+// Import Bootstrap
+@import "bootstrap";
+// or Import Bootstrap Flex
+@import "bootstrap-flex";
+// or Import Bootstrap Grid
+@import "bootstrap-grid";
+// or Import Bootstrap Reboot
+@import "bootstrap-reboot";
+
+$bg-color-light: #496271;
+$bg-color-dark:#344752;
+$c-text:#212f37;
+$c-text-light:#fff;
+$color-icons:#e85898;
+
+
+
+/** Main **/
+#main-body{
+  color:$c-text;
+  a {
+    color:$c-text;
+  }
+}
+
+/**  Header **/
+
+#header-nav,#footer-nav{
+  background-color: $bg-color-light;
+  color:$c-text-light;
+  padding:2rem;
+}
+
+#header-nav{
+    text-transform: uppercase;
+}
+
+/** Footer **/
