@@ -48,13 +48,15 @@
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
+		</div><!-- /.container -->
 	</nav>
 </div>
-</div><!-- fin #header-nav-->
+</div><!-- fin #header-nav , container-fluid -->
 
-	<header id="masthead" class="site-header" role="banner">
+<div class="container">
+	<div class="row">
+
+	<!--<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -71,8 +73,8 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<!--<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'jbyalexa' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+ <!--	</header><!-- #masthead -->

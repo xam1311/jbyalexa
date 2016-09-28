@@ -10,8 +10,8 @@
  */
 
 ?>
-
-	</div><!-- #content -->
+	</div><!-- fin de .row global-->
+</div><!-- #container-->
 	<div class="container-fluid" id="footer-nav">
 			<div class="container">
 			<footer>
