@@ -13,17 +13,21 @@
 	</div><!-- fin de .row global-->
 </div><!-- #container-->
 	<div class="container-fluid" id="footer-nav">
-			<div class="container">
-			<footer>
-				<div class="site-info">
-					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'jbyalexa' ), 'jbyalexa', '<a href="" rel="designer">xam1311</a>' ); ?>
-				</div><!-- .site-info -->
-			</footer>
-		</div>
+					<footer>
+								<div class="container">
+										<div class="row">
+
+														<div class="col-lg-6 col-md-6 col-xs-12">
+
+														</div>
+														<div class="col-lg-6 col-md-6 site-info">
+															<?php printf( esc_html__( '%1$s par %2$s', 'jbyalexa' ), 'jbyalexa', '<a href="https://twitter.com/Xam1311?lang=fr" target="_blank" rel="dev">@Xam1311</a>' ); ?>
+														</div><!-- .site-info -->
+
+										</div>
+								</div><!-- fin de container -->
+				</footer>
 	</div>
-
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

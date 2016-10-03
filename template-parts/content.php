@@ -8,8 +8,22 @@
  */
 
 ?>
+<?php if($count == 2): ?>
+
+<?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<picture>
+		<?php
+		if ( has_post_thumbnail() ) {
+    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+    if ( ! empty( $large_image_url[0] ) ) {
+        echo '<a href="' . esc_url( $large_image_url[0] ) . '" title="' . the_title_attribute( array( 'echo' => 0 ) ) . '">';
+        echo get_the_post_thumbnail( $post->ID, 'thumbnail' );
+        echo '</a>';
+    }
+} ?>
+	</picture>
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
@@ -45,3 +59,11 @@
 		<?php jbyalexa_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
+<?php if($count == 2): ?>
+
+<?php endif; ?>
+
+<?php if($count == 3): ?>
+
+<?php endif; ?>
