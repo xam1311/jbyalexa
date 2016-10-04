@@ -8,14 +8,9 @@
  */
 
 ?>
-<?php if($count_loop == 2): ?>
-<div class="row">
-	<div class="col-lg-6 col-md-6 col-xs-12">
-<?php endif; ?>
-
-
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<picture>
+				<?php //twentysixteen_post_thumbnail(); ?>
 					<?php
 					if ( has_post_thumbnail() ) {
 			    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
@@ -42,18 +37,26 @@
 					endif; ?>
 				</header><!-- .entry-header -->
 
+				<?php //twentysixteen_excerpt(); ?>
+
+
+
 				<div class="entry-content">
 					<?php
-						the_content( sprintf(
-							/* translators: %s: Name of current post. */
-							wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'jbyalexa' ), array( 'span' => array( 'class' => array() ) ) ),
-							the_title( '<span class="screen-reader-text">"', '"</span>', false )
+						/* translators: %s: Name of current post */
+					/*	the_content( sprintf(
+							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+							get_the_title()
 						) );
 
 						wp_link_pages( array(
-							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jbyalexa' ),
-							'after'  => '</div>',
-						) );
+							'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
+							'after'       => '</div>',
+							'link_before' => '<span>',
+							'link_after'  => '</span>',
+							'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
+							'separator'   => '<span class="screen-reader-text">, </span>',
+						) );*/
 					?>
 				</div><!-- .entry-content -->
 
@@ -61,14 +64,3 @@
 					<?php jbyalexa_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
 			</article><!-- #post-## -->
-
-	<?php if($count_loop == 2 ): ?>
-				</div>
-				<div class="col-lg-6 col-md-6 col-xs-12">
-	<?php endif; ?>
-
-<?php if($count_loop == 3): ?>	
-</div><!-- fin de la row de deux-->
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-xs-12">
-<?php endif; ?>
