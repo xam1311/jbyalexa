@@ -23,7 +23,7 @@
 <div class="container-fluid" id="header-nav">
 <div class="container">
       <?php if ( has_nav_menu( 'primary' )  ) : ?>
-      <nav class="navbar navbar-light bg-faded">
+      <nav class="navbar navbar-dark bg-faded">
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
           &#9776;
         </button>
@@ -36,12 +36,16 @@
                     'container_id'    => 'exCollapsingNavbar2',
                     'container_class' => 'collapse navbar-toggleable-xs',
                     'menu_id'         => false,
-                    'menu_class'      => 'nav navbar-nav',
+                    'menu_class'      => 'nav navbar-nav pull-xs-left',
                     'depth'           => 2,
                     'fallback_cb'     => 'bs4navwalker::fallback',
                     'walker'          => new bs4navwalker()
                 ]);
       			?>
+            <form class="form-inline pull-xs-right">
+                <input class="form-control" type="text" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
       </nav>
       <?php endif; ?>
     </div><!-- fin de .container-->
