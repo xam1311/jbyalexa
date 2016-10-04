@@ -44,7 +44,7 @@ function jbyalexa_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'jbyalexa' ),
+		'primary' => esc_html__( 'Menu principal', 'jbyalexa' ),
 	) );
 
 	/*
@@ -117,10 +117,9 @@ function jbyalexa_scripts() {
 //	wp_enqueue_style( 'jbyalexa-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'jbyalexa-style',  get_template_directory_uri() . '/stylesheets/styles.css' );
-
-	wp_enqueue_script( 'jbyalexa-navigation', get_template_directory_uri() . '/javascripts/bootstrap.min.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'jbyalexa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'jbyalexa-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'jbyalexa-tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'jbyalexa-bootstrap', get_template_directory_uri() . '/javascripts/bootstrap.min.js', array('jquery'), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -142,6 +141,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/bs4navwalker.php';
 
 /**
  * Customizer additions.
