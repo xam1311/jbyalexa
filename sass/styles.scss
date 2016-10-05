@@ -11,7 +11,6 @@
 
 $bg-color-light: #496271;
 $bg-color-dark:#344752;
-$c-text:#212f37;
 $c-text-light:#fff;
 $color-icons:#e85898;
 
@@ -19,17 +18,19 @@ $color-icons:#e85898;
 
 /** Main **/
 #main-body{
-  color:$c-text;
-  a {
-    color:$c-text;
-  }
+
 }
 
 /**  Header **/
-
-#header-nav,#footer-nav{
+#header-nav, #footer-nav{
   background-color: $bg-color-light;
+ }
+ 
+#footer-nav{
   color:$c-text-light;
+  a{
+    color:$c-text-light;
+  }
 }
 
 #header-nav{
@@ -41,9 +42,6 @@ $color-icons:#e85898;
 
 /** Main content **/
 
-.other-frontpage{
-  padding:0 45px;
-}
 /** Sidebar **/
 
 .col-sidebar{

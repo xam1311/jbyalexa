@@ -24,58 +24,68 @@ function jbyalexa_setup() {
 	 */
 	load_theme_textdomain( 'jbyalexa', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
+	if ( function_exists( 'add_theme_support' ) ) :
+				// Add default posts and comments RSS feed links to head.
+				add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-	 */
-	add_theme_support( 'post-thumbnails' );
+				/*
+				 * Let WordPress manage the document title.
+				 * By adding theme support, we declare that this theme does not use a
+				 * hard-coded <title> tag in the document head, and expect WordPress to
+				 * provide it for us.
+				 */
+				add_theme_support( 'title-tag' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Menu principal', 'jbyalexa' ),
-	) );
+				/*
+				 * Enable support for Post Thumbnails on posts and pages.
+				 *
+				 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+				 */
+				add_theme_support( 'post-thumbnails' );
+				set_post_thumbnail_size( 400, 260, true ); // default Post Thumbnail dimensions (cropped)
+			  // additional image sizes
+				add_image_size( 'post-big', 930, 611, true );
+				add_image_size( 'post-h-thumbnails', 274, 269, true );
+			  add_image_size( 'category-thumb', 300, 130, true );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+				// This theme uses wp_nav_menu() in one location.
+				register_nav_menus( array(
+					'primary' => esc_html__( 'Menu principal', 'jbyalexa' ),
+				) );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See https://developer.wordpress.org/themes/functionality/post-formats/
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+				/*
+				 * Switch default core markup for search form, comment form, and comments
+				 * to output valid HTML5.
+				 */
+				add_theme_support( 'html5', array(
+					'search-form',
+					'comment-form',
+					'comment-list',
+					'gallery',
+					'caption',
+				) );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'jbyalexa_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+				/*
+				 * Enable support for Post Formats.
+				 * See https://developer.wordpress.org/themes/functionality/post-formats/
+				 */
+				add_theme_support( 'post-formats', array(
+					'aside',
+					'image',
+					'video',
+					'quote',
+					'link',
+				) );
+
+				// Set up the WordPress core custom background feature.
+				add_theme_support( 'custom-background', apply_filters( 'jbyalexa_custom_background_args', array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				) ) );
+		endif;
+
+
 }
 endif;
 add_action( 'after_setup_theme', 'jbyalexa_setup' );
@@ -115,7 +125,7 @@ add_action( 'widgets_init', 'jbyalexa_widgets_init' );
  */
 function jbyalexa_scripts() {
 //	wp_enqueue_style( 'jbyalexa-style', get_stylesheet_uri() );
-
+	wp_enqueue_style( 'jbyalexa-font', 'https://fonts.googleapis.com/css?family=Raleway:400,800');
 	wp_enqueue_style( 'jbyalexa-style',  get_template_directory_uri() . '/stylesheets/styles.css' );
 	wp_enqueue_script( 'jbyalexa-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'jbyalexa-tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js', array('jquery'), '20151215', true );

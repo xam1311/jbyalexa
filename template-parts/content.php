@@ -9,58 +9,40 @@
 
 ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<picture>
-				<?php //twentysixteen_post_thumbnail(); ?>
+				<div class="post-inner post-hover">
+					<div class="post-thumbnail">
 					<?php
-					if ( has_post_thumbnail() ) {
-			    $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
+					if ( has_post_thumbnail() ) :
+							if( is_home() or is_single()):
+								the_post_thumbnail('post-big',array('class' =>  'img-fluid'));
+
+							else:
+								 the_post_thumbnail('thumbnail');
+					endif;
+			  /*  $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 			    if ( ! empty( $large_image_url[0] ) ) {
 			        echo '<a href="' . esc_url( $large_image_url[0] ) . '" title="' . the_title_attribute( array( 'echo' => 0 ) ) . '">';
 			        echo get_the_post_thumbnail( $post->ID, 'thumbnail' );
 			        echo '</a>';
-			    }
-			} ?>
-				</picture>
-				<header class="entry-header">
-					<?php
-						if ( is_single() ) {
-							the_title( '<h1 class="entry-title">', '</h1>' );
-						} else {
-							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-						}
+			    }*/
+		 			endif; ?>
+					<?php if ( comments_open() /*&& ( hu_is_checked( 'comment-count' ) ) */): ?>
+					<a class="post-comments" href="<?php comments_link(); ?>"><span><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></span></a>
+				<?php endif; ?>
+				</div><!--/.post-thumbnail-->
 
-					if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
+				<div class="post-meta group">
 						<?php jbyalexa_posted_on(); ?>
-					</div><!-- .entry-meta -->
-					<?php
-					endif; ?>
-				</header><!-- .entry-header -->
+				</div><!-- .entry-meta -->
 
-				<?php //twentysixteen_excerpt(); ?>
-
+				<h2 class="post-title entry-title">
+					<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				</h2><!--/.post-title-->
 
 
-				<div class="entry-content">
-					<?php
-						/* translators: %s: Name of current post */
-					/*	the_content( sprintf(
-							__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
-							get_the_title()
-						) );
+				<div class="entry excerpt entry-summary">
+					<?php the_excerpt(); ?>
+				</div><!--/.entry-->
 
-						wp_link_pages( array(
-							'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
-							'after'       => '</div>',
-							'link_before' => '<span>',
-							'link_after'  => '</span>',
-							'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
-							'separator'   => '<span class="screen-reader-text">, </span>',
-						) );*/
-					?>
-				</div><!-- .entry-content -->
-
-				<footer class="entry-footer">
-					<?php jbyalexa_entry_footer(); ?>
-				</footer><!-- .entry-footer -->
+			</div>
 			</article><!-- #post-## -->

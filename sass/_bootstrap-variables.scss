@@ -24,13 +24,13 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-// $gray-dark:                 #373a3c;
+ $gray-dark:                   #212f37;
 // $gray:                      #55595c;
 // $gray-light:                #818a91;
 // $gray-lighter:              #eceeef;
 // $gray-lightest:             #f7f7f9;
 
-// $brand-primary:             #0275d8;
+ $brand-primary:              #212f37;
 // $brand-success:             #5cb85c;
 // $brand-info:                #5bc0de;
 // $brand-warning:             #f0ad4e;
@@ -86,18 +86,18 @@
 //
 // Settings for the `<body>` element.
 
-// $body-bg:    #fff;
-// $body-color: $gray-dark;
+ $body-bg:    #fff;
+ $body-color: $gray-dark;
 
 
 // Links
 //
 // Style anchor elements.
 
-// $link-color:            $brand-primary;
-// $link-decoration:       none;
-// $link-hover-color:      darken($link-color, 15%);
-// $link-hover-decoration: underline;
+ $link-color:            $brand-primary;
+ $link-decoration:       none;
+ $link-hover-color:      darken($link-color, 15%);
+ $link-hover-decoration: underline;
 
 
 // Grid breakpoints
@@ -105,25 +105,25 @@
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 544px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px
-// );
+ $grid-breakpoints: (
+   xs: 0,
+   sm: 544px,
+   md: 768px,
+   lg: 992px,
+   xl: 1300px
+ );
 
 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-// $container-max-widths: (
-//   sm: 576px,
-//   md: 720px,
-//   lg: 940px,
-//   xl: 1140px
-// );
+ $container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1240px
+ );
 
 
 // Grid columns
@@ -139,6 +139,22 @@
 // Font, line-height, and color for body text, headings, and more.
 
 // $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ $font-family-sans-serif: /* Safari for OS X and iOS (San Francisco)*/  -apple-system,
+  // Chrome for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Linux
+  "Oxygen", // KDE
+  "Ubuntu",
+  "Cantarell", // GNOME
+  // Firefox OS [R.I.P.]
+  "Fira Sans",
+  // Older Android
+  "Droid Sans",
+  'Raleway', sans-serif, Arial;
 // $font-family-serif:      Georgia, "Times New Roman", Times, serif;
 // $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // $font-family-base:       $font-family-sans-serif;
