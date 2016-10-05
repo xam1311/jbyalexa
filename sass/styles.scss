@@ -12,7 +12,7 @@
 $bg-color-light: #496271;
 $bg-color-dark:#344752;
 $c-text-light:#fff;
-$color-icons:#e85898;
+$color-pink:#e85898;
 
 
 
@@ -62,6 +62,17 @@ $color-icons:#e85898;
     color:#fff;
   }
 }
+
+.post-inside{
+  .read-more{
+    display:inline-block;
+    span.icon-plus-button{
+      color:$color-pink;
+      font-size:1.3em;
+      padding-right: 5px;
+    }
+  }
+}
 /** Footer **/
 
 
@@ -71,5 +82,5 @@ $color-icons:#e85898;
 
 .col-sidebar{
   border-left:1px solid #d0d0d0;
-  padding: 40px 35px;
+  padding: 40px 20px;
 }

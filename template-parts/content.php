@@ -41,6 +41,7 @@ $count = get_query_var('count');
 
 				<div class="entry excerpt entry-summary">
 					<?php the_excerpt(); ?>
+					<a href="<?php echo get_permalink(); ?>" class="read-more"><span class="icon-plus-button"></span>Lire la suite</a>
 				</div><!--/.entry-->
 
 			</div>

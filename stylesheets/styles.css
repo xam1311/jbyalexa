@@ -7784,11 +7784,22 @@ a.text-danger:hover {
   color: #fff;
 }
 
+/* line 67, ../sass/styles.scss */
+.post-inside .read-more {
+  display: inline-block;
+}
+/* line 69, ../sass/styles.scss */
+.post-inside .read-more span.icon-plus-button {
+  color: #e85898;
+  font-size: 1.3em;
+  padding-right: 5px;
+}
+
 /** Footer **/
 /** Main content **/
 /** Sidebar **/
-/* line 72, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 .col-sidebar {
   border-left: 1px solid #d0d0d0;
-  padding: 40px 35px;
+  padding: 40px 20px;
 }
