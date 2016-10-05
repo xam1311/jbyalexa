@@ -4218,7 +4218,7 @@ input[type="button"].btn-block {
 }
 /* line 20, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/_nav.scss */
 .nav-link.disabled {
-  color: #818a91;
+  color: white;
 }
 /* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .nav-link.disabled, .nav-link.disabled:focus {
@@ -4278,13 +4278,13 @@ input[type="button"].btn-block {
 }
 /* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link.disabled:focus {
-  color: #818a91;
+  color: white;
   background-color: transparent;
   border-color: transparent;
 }
 /* line 11, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .nav-tabs .nav-link.disabled:hover {
-  color: #818a91;
+  color: white;
   background-color: transparent;
   border-color: transparent;
 }
@@ -4539,7 +4539,7 @@ input[type="button"].btn-block {
 }
 /* line 189, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: #496271;
 }
 /* line 17, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .navbar-dark .navbar-nav .nav-link:focus {
@@ -7725,24 +7725,28 @@ a.text-danger:hover {
 }
 
 /** Main **/
+/* line 21, ../sass/styles.scss */
+#header-nav {
+  text-transform: uppercase;
+}
+/* line 23, ../sass/styles.scss */
+#header-nav a {
+  color: #fff;
+}
+
 /**  Header **/
-/* line 25, ../sass/styles.scss */
-#header-nav, #footer-nav {
+/* line 29, ../sass/styles.scss */
+#header-nav, #footer-nav, .bg-faded {
   background-color: #496271;
 }
 
-/* line 29, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 #footer-nav {
   color: #fff;
 }
-/* line 31, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 #footer-nav a {
   color: #fff;
-}
-
-/* line 36, ../sass/styles.scss */
-#header-nav {
-  text-transform: uppercase;
 }
 
 /** Footer **/

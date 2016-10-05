@@ -17,24 +17,24 @@ $color-icons:#e85898;
 
 
 /** Main **/
-#main-body{
 
+#header-nav{
+    text-transform: uppercase;
+      a{
+        color:$c-text-light;
+      }
 }
 
 /**  Header **/
-#header-nav, #footer-nav{
+#header-nav, #footer-nav, .bg-faded{
   background-color: $bg-color-light;
  }
- 
+
 #footer-nav{
   color:$c-text-light;
   a{
     color:$c-text-light;
   }
-}
-
-#header-nav{
-    text-transform: uppercase;
 }
 
 /** Footer **/

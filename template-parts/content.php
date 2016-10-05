@@ -13,10 +13,13 @@
 					<div class="post-thumbnail">
 					<?php
 					if ( has_post_thumbnail() ) :
-							if( is_home() or is_single()):
-								the_post_thumbnail('post-big',array('class' =>  'img-fluid'));
+							if( is_home() or is_single()): ?>
 
-							else:
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+								<img src="<?php the_post_thumbnail_url('post-big') ?>" class="attachment-post-big wp-post-image img-fluid"/>
+								</a>
+
+							<?php else:
 								 the_post_thumbnail('thumbnail');
 					endif;
 			  /*  $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
@@ -27,7 +30,7 @@
 			    }*/
 		 			endif; ?>
 					<?php if ( comments_open() /*&& ( hu_is_checked( 'comment-count' ) ) */): ?>
-					<a class="post-comments" href="<?php comments_link(); ?>"><span><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></span></a>
+					<a class="post-comments" href="<?php comments_link(); ?>"><span></i><?php comments_number( '0', '1', '%' ); ?></span></a>
 				<?php endif; ?>
 				</div><!--/.post-thumbnail-->
 
