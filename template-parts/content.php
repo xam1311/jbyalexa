@@ -6,19 +6,17 @@
  *
  * @package Jbyalexa
  */
-
+$count = get_query_var('count');
 ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="post-inner post-hover">
+				<div class="post-inner <?php echo isset($count)? 'post-inside':'post-'.$count;?>">
 					<div class="post-thumbnail">
 					<?php
 					if ( has_post_thumbnail() ) :
 							if( is_home() or is_single()): ?>
-
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 								<img src="<?php the_post_thumbnail_url('post-big') ?>" class="attachment-post-big wp-post-image img-fluid"/>
 								</a>
-
 							<?php else:
 								 the_post_thumbnail('thumbnail');
 					endif;
@@ -29,14 +27,12 @@
 			        echo '</a>';
 			    }*/
 		 			endif; ?>
-					<?php if ( comments_open() /*&& ( hu_is_checked( 'comment-count' ) ) */): ?>
-					<a class="post-comments" href="<?php comments_link(); ?>"><span></i><?php comments_number( '0', '1', '%' ); ?></span></a>
-				<?php endif; ?>
+					<div class="post-meta group">
+							<?php jbyalexa_posted_on(); ?>
+					</div><!-- .entry-meta -->
 				</div><!--/.post-thumbnail-->
 
-				<div class="post-meta group">
-						<?php jbyalexa_posted_on(); ?>
-				</div><!-- .entry-meta -->
+
 
 				<h2 class="post-title entry-title">
 					<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>

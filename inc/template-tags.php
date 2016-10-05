@@ -24,7 +24,20 @@ function jbyalexa_posted_on() {
 	);
 	$comments_count = wp_count_comments();
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="category">' . the_category('','single'). '</span><span class="comments"> ' . $comments_count->approved . '</span>'; // WPCS: XSS OK.
+	echo '<span class="icon-time">' . $posted_on . '</span>';
+	echo '<span class="icon-category">';
+	foreach((get_the_category()) as $category):
+
+		echo $category->cat_name . ' ';
+
+	endforeach;
+
+	echo '</span>';
+	if( $comments_count->approved > 0 ):
+
+	echo '<span class="icon-chat""> ' . $comments_count->approved . '</span>';
+
+ 	endif;
 
 }
 endif;

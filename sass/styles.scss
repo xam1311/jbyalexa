@@ -36,7 +36,32 @@ $color-icons:#e85898;
     color:$c-text-light;
   }
 }
-
+/** Content Article **/
+.post-inner .entry-title{
+  margin-top:30px;
+}
+.post-thumbnail{
+  position:relative;
+}
+.post-meta {
+  background-color: #fff;
+  height:20px;
+  position: absolute;
+  bottom:0;
+  span{
+    padding:0 8px;
+    margin:0 3px;
+    time{
+      margin-left: 6px;
+    }
+  }
+  .icon-category{
+    background-color:#c3c5c6;
+    padding:3px;
+    text-transform: uppercase;
+    color:#fff;
+  }
+}
 /** Footer **/
 
 

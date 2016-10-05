@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'jbyalexa';
+  src:  url('fonts/jbyalexa.eot?si3ghs');
+  src:  url('fonts/jbyalexa.eot?si3ghs#iefix') format('embedded-opentype'),
+    url('fonts/jbyalexa.ttf?si3ghs') format('truetype'),
+    url('fonts/jbyalexa.woff?si3ghs') format('woff'),
+    url('fonts/jbyalexa.svg?si3ghs#jbyalexa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jbyalexa' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-folder:before {
+  content: "\e900";
+}
+.icon-arrows:before {
+  content: "\e901";
+}
+.icon-chat:before {
+  content: "\e902";
+}
+.icon-communication:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\e904";
+}
+.icon-folders:before {
+  content: "\e905";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-instagram-logo:before {
+  content: "\e907";
+}
+.icon-login:before {
+  content: "\e908";
+}
+.icon-pinterest-logo:before {
+  content: "\e909";
+}
+.icon-plus-button:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-time:before {
+  content: "\e90c";
+}
+.icon-twitter-black:before {
+  content: "\e90d";
+}
+.icon-twitter-white:before {
+  content: "\e90e";
+}
+.icon-youtube:before {
+  content: "\e90f";
+}

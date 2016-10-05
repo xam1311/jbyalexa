@@ -4218,7 +4218,7 @@ input[type="button"].btn-block {
 }
 /* line 20, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/_nav.scss */
 .nav-link.disabled {
-  color: white;
+  color: #818a91;
 }
 /* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .nav-link.disabled, .nav-link.disabled:focus {
@@ -4278,13 +4278,13 @@ input[type="button"].btn-block {
 }
 /* line 30, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link.disabled:focus {
-  color: white;
+  color: #818a91;
   background-color: transparent;
   border-color: transparent;
 }
 /* line 11, ../../../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/bootstrap-4.0.0.alpha4/assets/stylesheets/bootstrap/mixins/_hover.scss */
 .nav-tabs .nav-link.disabled:hover {
-  color: white;
+  color: #818a91;
   background-color: transparent;
   border-color: transparent;
 }
@@ -7749,10 +7749,45 @@ a.text-danger:hover {
   color: #fff;
 }
 
+/** Content Article **/
+/* line 40, ../sass/styles.scss */
+.post-inner .entry-title {
+  margin-top: 30px;
+}
+
+/* line 43, ../sass/styles.scss */
+.post-thumbnail {
+  position: relative;
+}
+
+/* line 46, ../sass/styles.scss */
+.post-meta {
+  background-color: #fff;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 51, ../sass/styles.scss */
+.post-meta span {
+  padding: 0 8px;
+  margin: 0 3px;
+}
+/* line 54, ../sass/styles.scss */
+.post-meta span time {
+  margin-left: 6px;
+}
+/* line 58, ../sass/styles.scss */
+.post-meta .icon-category {
+  background-color: #c3c5c6;
+  padding: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /** Footer **/
 /** Main content **/
 /** Sidebar **/
-/* line 47, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .col-sidebar {
   border-left: 1px solid #d0d0d0;
   padding: 40px 35px;

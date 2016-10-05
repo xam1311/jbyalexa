@@ -36,7 +36,6 @@ function jbyalexa_setup() {
 				 * provide it for us.
 				 */
 				add_theme_support( 'title-tag' );
-
 				/*
 				 * Enable support for Post Thumbnails on posts and pages.
 				 *
@@ -126,6 +125,7 @@ add_action( 'widgets_init', 'jbyalexa_widgets_init' );
 function jbyalexa_scripts() {
 //	wp_enqueue_style( 'jbyalexa-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'jbyalexa-font', 'https://fonts.googleapis.com/css?family=Raleway:400,800');
+	wp_enqueue_style( 'jbyalexa-icons',  get_template_directory_uri() . '/stylesheets/iconsjby.css' );
 	wp_enqueue_style( 'jbyalexa-style',  get_template_directory_uri() . '/stylesheets/styles.css' );
 	wp_enqueue_script( 'jbyalexa-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'jbyalexa-tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js', array('jquery'), '20151215', true );
