@@ -20,42 +20,43 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+			if ( is_home() && !is_front_page() ) : ?>
+						<header>
+							<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+						</header>
 
-			<?php
-			endif;
+					<?php
+					endif;
 
-			/* Start the Loop */
-			$count = 0;
-			while ( have_posts() ) : the_post();
-			$count++;
-			set_query_var( 'count_loop', $count );
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
+					/* Start the Loop */
+					$count = 0;
+					while ( have_posts() ) : the_post();
+					$count++;
+					set_query_var( 'count_loop', $count );
+						/*
+						 * Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
 
-				get_template_part( 'template-parts/content', get_post_format() );
+					get_template_part( 'template-parts/content', get_post_format() );
 
-			endwhile; ?>
+					endwhile; ?>
 
-			<div class="col-lg-12 col-md-12 col-xs-12">
-			<?php
+					<div class="col-lg-12 col-md-12 col-xs-12">
 
-			the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> Précédent','next_text'=>'Suivant <i class="icon-arrow-right"></i>','screen_reader_text'=>' '));
+					<?php
+
+					the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> Précédent','next_text'=>'Suivant <i class="icon-arrow-right"></i>','screen_reader_text'=>' '));
+
 			else : ?>
 
-			<div class="col-lg-12 col-md-12 col-xs-12">
+					<div class="col-lg-12 col-md-12 col-xs-12">
 
-			<?php	get_template_part( 'template-parts/content', 'none' );?>
+					<?php	get_template_part( 'template-parts/content', 'none' );?>
 
 		</main><!-- #main -->
 </div><!-- #primary -->
-
 <?php
 get_sidebar();
 get_footer();

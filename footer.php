@@ -12,15 +12,23 @@
 ?>
 	</div><!-- fin de .row global-->
 </div><!-- #container-->
+
+<div class="container-fluid" id="instagram-responsive">
+	<div class="row">
+					<div class="col-lg-12 col-md-12 col-xs-12">
+						<?php echo do_shortcode('[instagram-feed]'); ?>
+					</div>
+	</div>
+</div>
 	<div class="container-fluid" id="footer-nav">
 					<footer>
 								<div class="container">
 										<div class="row">
-
 														<div class="col-lg-2 col-md-2 col-xs-6">
+														<p><?php esc_html_e('Fan des bijoux d\'Alexa ?','jbyalexa'); ?><br/><strong><?php esc_html_e('ALORS SUIVEZ-MOI!','jbyalexa'); ?></strong></p>
 
-															<p>Fan des bijoux d'Alexa ?<br/>ALORS SUIVEZ-MOI !</p>
 														</div>
+
 														<div class="col-lg-4 col-md-4 col-xs-6 footer-social">
 																	<?php  wp_nav_menu([
 										                    'menu'            => 'social',
@@ -31,8 +39,10 @@
 														</div>
 														<div class="col-lg-6 col-md-6 col-xs-12 site-info">
 															<p>
-															Copyright &#xa9; <?php echo date('Y'); ?> JbyAlexa <br/> Design by <a href="https://anne-b.fr" target="_blank" rel="Theme Design">Anne-b</a> / Dev by <a href="https://twitter.com/Xam1311" target="_blank" rel="Theme Dev">@Xam1311</a>
-														</p>
+
+															<?php esc_html_e('Copyright &#xa9; '.date('Y').' JbyAlexa <br/> Design by <a href="https://anne-b.fr" target="_blank" rel="Theme Design">Anne-b</a> / Dev by <a href="https://twitter.com/Xam1311" target="_blank" rel="Theme Dev">@Xam1311</a>','jbyalexa');?>
+
+															</p>
 														</div><!-- .site-info -->
 
 										</div>
