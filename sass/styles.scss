@@ -13,6 +13,7 @@ $bg-color-light: #496271;
 $bg-color-dark:#344752;
 $c-text-light:#fff;
 $color-pink:#e85898;
+$icon-size: 1.3em;
 
 
 
@@ -34,49 +35,82 @@ $color-pink:#e85898;
   color:$c-text-light;
   a{
     color:$c-text-light;
+    text-decoration:none;
+  }
+  footer{
+    padding: 20px 0 10px 0;
+  }
+  .footer-social ul {
+    list-style-type: none;
+    padding:0;
+    padding-top: 10px;
+    li{
+    font-size:1.3em;
+    display:inline-block;
+    margin-right:15px;
+      i {
+        font-size:$icon-size;
+      }
+    }
+  }
+  .site-info{
+    text-align:right;
   }
 }
+
+
 /** Content Article **/
-.post-inner .entry-title{
-  margin-top:30px;
-}
 .post-thumbnail{
   position:relative;
 }
 .post-meta {
-  background-color: #fff;
-  height:20px;
   position: absolute;
   bottom:0;
+  background-color: #fff;
+  height:29px;
   span{
-    padding:0 8px;
-    margin:0 3px;
+    padding-right: 8px;
+    margin:0 8px;
+    i{
+      font-size:$icon-size;
+      vertical-align: middle;
+    }
     time{
       margin-left: 6px;
+      margin-bottom: 4px;
     }
   }
-  .icon-category{
+  .meta-categories{
     background-color:#c3c5c6;
-    padding:3px;
     text-transform: uppercase;
     color:#fff;
+    a{
+      padding-left: 8px;
+      color:#fff;
+     }
   }
-}
 
+}
 .post-inside{
-  .read-more{
-    display:inline-block;
-    span.icon-plus-button{
-      color:$color-pink;
-      font-size:1.3em;
-      padding-right: 5px;
+  .post-content{
+    margin-top:20px;
+    padding: 20px;
+    background-color:#f7f7f7;
+    .entry-title{
+    margin-bottom: 20px;
     }
+    .read-more{
+      .icon-plus-button{
+        color:$color-pink;
+        font-size:$icon-size;
+        padding-right: 5px;
+        vertical-align: middle;
+      }
+  }
   }
 }
-/** Footer **/
 
 
-/** Main content **/
 
 /** Sidebar **/
 

@@ -33,16 +33,28 @@ $count = get_query_var('count');
 				</div><!--/.post-thumbnail-->
 
 
+				<?php 	if ( !is_single() ) : ?>
+					<div class="post-content entry-content">
+				<?php endif; ?>
+					<h2 class="post-title entry-title">
+						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h2><!--/.post-title-->
 
-				<h2 class="post-title entry-title">
-					<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-				</h2><!--/.post-title-->
 
 
-				<div class="entry excerpt entry-summary">
-					<?php the_excerpt(); ?>
-					<a href="<?php echo get_permalink(); ?>" class="read-more"><span class="icon-plus-button"></span>Lire la suite</a>
-				</div><!--/.entry-->
+						<?php 	if ( !is_single() ) : ?>
+						<div class="post-entry entry-excerpt">
+							<?php the_excerpt(); ?>
+							<a href="<?php echo get_permalink(); ?>" class="read-more"><i class="icon-plus-button"></i><span>Lire la suite</span></a>
+
+						<?php else: ?>
+							<div class="entry entry-fullcontent">
+								<?php the_content(); ?>
+						<?php endif; ?>
+					</div><!--/.entry-->
+			<?php 	if ( !is_single() ) : ?>
+			</div>
+			<?php endif; ?>
 
 			</div>
 			</article><!-- #post-## -->

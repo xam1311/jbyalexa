@@ -17,19 +17,21 @@
 								<div class="container">
 										<div class="row">
 
-														<div class="col-lg-6 col-md-6 col-xs-12">
+														<div class="col-lg-2 col-md-2 col-xs-6">
 
-															<p>Fan des bijoux d'Alexa <br>
-																ALORS SUIVEZ-MOI !
-
+															<p>Fan des bijoux d'Alexa ?<br/>ALORS SUIVEZ-MOI !</p>
+														</div>
+														<div class="col-lg-4 col-md-4 col-xs-6 footer-social">
 																	<?php  wp_nav_menu([
 										                    'menu'            => 'social',
 										                    'theme_location'  => 'social',
 										                ]); ?>
-																</p>
+
 														</div>
-														<div class="col-lg-6 col-md-6 site-info">
-															<?php printf( esc_html__( '%1$s par %2$s', 'jbyalexa' ), 'jbyalexa', 'Copyright © 2016 JbyAlexa <br/> Design by <a href="https://anne-b.fr" target="_blank">Anne-b</a> / Dev by <a href="https://twitter.com/Xam1311" target="_blank" rel="dev">@Xam1311</a>' ); ?>
+														<div class="col-lg-6 col-md-6 col-xs-12 site-info">
+															<p>
+															Copyright &#xa9; <?php echo date('Y'); ?> JbyAlexa <br/> Design by <a href="https://anne-b.fr" target="_blank" rel="Theme Design">Anne-b</a> / Dev by <a href="https://twitter.com/Xam1311" target="_blank" rel="Theme Dev">@Xam1311</a>
+														</p>
 														</div><!-- .site-info -->
 
 										</div>

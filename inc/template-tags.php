@@ -24,18 +24,19 @@ function jbyalexa_posted_on() {
 	);
 	$comments_count = wp_count_comments();
 
-	echo '<span class="icon-time">' . $posted_on . '</span>';
-	echo '<span class="icon-category">';
+	echo '<span class="meta-posted"><i class="icon-time"></i>' . $posted_on . '</span>';
+	echo '<span class="meta-categories"><i class="icon-category"></i>';
 	foreach((get_the_category()) as $category):
+		$category_link = get_category_link( $category->cat_ID);
 
-		echo $category->cat_name . ' ';
+		echo '<a href="'.esc_url( $category_link ).'">'. $category->cat_name.' </a>';
 
 	endforeach;
 
 	echo '</span>';
 	if( $comments_count->approved > 0 ):
 
-	echo '<span class="icon-chat""> ' . $comments_count->approved . '</span>';
+	echo '<span class="meta-comments"><i class="icon-communication"></i> ' . $comments_count->approved . '</span>';
 
  	endif;
 

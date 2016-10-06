@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'jbyalexa';
-  src:  url('fonts/jbyalexa.eot?si3ghs');
-  src:  url('fonts/jbyalexa.eot?si3ghs#iefix') format('embedded-opentype'),
-    url('fonts/jbyalexa.ttf?si3ghs') format('truetype'),
-    url('fonts/jbyalexa.woff?si3ghs') format('woff'),
-    url('fonts/jbyalexa.svg?si3ghs#jbyalexa') format('svg');
+  src:  url('fonts/jbyalexa.eot?u6ccfn');
+  src:  url('fonts/jbyalexa.eot?u6ccfn#iefix') format('embedded-opentype'),
+    url('fonts/jbyalexa.ttf?u6ccfn') format('truetype'),
+    url('fonts/jbyalexa.woff?u6ccfn') format('woff'),
+    url('fonts/jbyalexa.svg?u6ccfn#jbyalexa') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'jbyalexa' !important;
   speak: none;
@@ -24,7 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-folder:before {
+.icon-category:before {
   content: "\e900";
 }
 .icon-arrows:before {
@@ -45,13 +45,13 @@
 .icon-instagram:before {
   content: "\e906";
 }
-.icon-instagram-logo:before {
+.icon-instagram-new:before {
   content: "\e907";
 }
 .icon-login:before {
   content: "\e908";
 }
-.icon-pinterest-logo:before {
+.icon-pinterest:before {
   content: "\e909";
 }
 .icon-plus-button:before {
@@ -63,10 +63,10 @@
 .icon-time:before {
   content: "\e90c";
 }
-.icon-twitter-black:before {
+.icon-twitter-p:before {
   content: "\e90d";
 }
-.icon-twitter-white:before {
+.icon-twitter:before {
   content: "\e90e";
 }
 .icon-youtube:before {
