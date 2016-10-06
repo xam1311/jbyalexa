@@ -7850,7 +7850,24 @@ nav.navigation .nav-links .nav-next {
 
 /** Sidebar **/
 /* line 131, ../sass/styles.scss */
-.col-sidebar {
+#sidebar {
   border-left: 1px solid #d0d0d0;
-  padding: 40px 20px;
+  padding: 20px;
+}
+/* line 134, ../sass/styles.scss */
+#sidebar section {
+  border-bottom: 1px dotted #496271;
+  padding: 20px 0;
+}
+/* line 137, ../sass/styles.scss */
+#sidebar section h4 {
+  text-transform: uppercase;
+  color: #e85898;
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 142, ../sass/styles.scss */
+#sidebar section h4 i {
+  vertical-align: center;
+  font-size: 1.3em;
 }

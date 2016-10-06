@@ -36,7 +36,7 @@ get_header(); ?>
 				 */
 				get_template_part( 'template-parts/content', get_post_format() );
 
-				<?php	endwhile; ?>
+			endwhile; ?>
 
 			<div class="col-lg-12 col-md-12 col-xs-12">
 			<?php
@@ -45,7 +45,7 @@ get_header(); ?>
 
 			<div class="col-lg-12 col-md-12 col-xs-12">
 
-			get_template_part( 'template-parts/content', 'none' );
+			<?php get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
 
