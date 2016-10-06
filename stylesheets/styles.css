@@ -7816,9 +7816,9 @@ a.text-danger:hover {
 
 /* line 95, ../sass/styles.scss */
 .post-inside .post-content {
-  margin-top: 20px;
   padding: 20px;
   background-color: #f7f7f7;
+  margin-bottom: 20px;
 }
 /* line 99, ../sass/styles.scss */
 .post-inside .post-content .entry-title {
@@ -7832,8 +7832,24 @@ a.text-danger:hover {
   vertical-align: middle;
 }
 
+/** NAvigation posts **/
+/* line 116, ../sass/styles.scss */
+nav.navigation .nav-links {
+  padding: 20px 40px 40px 40px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+/* line 120, ../sass/styles.scss */
+nav.navigation .nav-links .nav-previous {
+  text-align: left;
+}
+/* line 123, ../sass/styles.scss */
+nav.navigation .nav-links .nav-next {
+  text-align: right;
+}
+
 /** Sidebar **/
-/* line 117, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .col-sidebar {
   border-left: 1px solid #d0d0d0;
   padding: 40px 20px;

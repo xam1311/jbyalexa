@@ -44,7 +44,7 @@ function jbyalexa_setup() {
 				add_theme_support( 'post-thumbnails' );
 				set_post_thumbnail_size( 400, 260, true ); // default Post Thumbnail dimensions (cropped)
 			  // additional image sizes
-				add_image_size( 'post-big', 930, 611, true );
+				add_image_size( 'post-big', 930, 593, true );
 				add_image_size( 'post-h-thumbnails', 274, 269, true );
 			  add_image_size( 'category-thumb', 300, 130, true );
 

@@ -19,28 +19,29 @@ $count = get_query_var('count');
 								</a>
 							<?php else:
 								 the_post_thumbnail('thumbnail');
-					endif;
+							 endif;
 			  /*  $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );
 			    if ( ! empty( $large_image_url[0] ) ) {
 			        echo '<a href="' . esc_url( $large_image_url[0] ) . '" title="' . the_title_attribute( array( 'echo' => 0 ) ) . '">';
 			        echo get_the_post_thumbnail( $post->ID, 'thumbnail' );
 			        echo '</a>';
 			    }*/
-		 			endif; ?>
+				else: ?>
+
+				<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="image manquante"/>
+
+		 		<?php	endif; ?>
+
 					<div class="post-meta group">
 							<?php jbyalexa_posted_on(); ?>
 					</div><!-- .entry-meta -->
 				</div><!--/.post-thumbnail-->
 
 
-				<?php 	if ( !is_single() ) : ?>
 					<div class="post-content entry-content">
-				<?php endif; ?>
 					<h2 class="post-title entry-title">
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h2><!--/.post-title-->
-
-
 
 						<?php 	if ( !is_single() ) : ?>
 						<div class="post-entry entry-excerpt">

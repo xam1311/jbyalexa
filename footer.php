@@ -25,6 +25,7 @@
 																	<?php  wp_nav_menu([
 										                    'menu'            => 'social',
 										                    'theme_location'  => 'social',
+																				'depth' =>1,
 										                ]); ?>
 
 														</div>

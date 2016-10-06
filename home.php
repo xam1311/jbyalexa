@@ -67,15 +67,19 @@ get_header(); ?>
 						<!--	</div><!-- fin de la colonne global -->
 
 							<?php	endwhile; ?>
-			</div> <!-- fin de .row principal-->
-			<?php
-						the_posts_navigation();
-		else :
 
-			get_template_part( 'template-parts/content', 'none' );
+	 	<div class="col-lg-12 col-md-12 col-xs-12">
+		<?php
+
+		the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> Précédent','next_text'=>'Suivant <i class="icon-arrow-right"></i>','screen_reader_text'=>' '));
+		else : ?>
+
+		<div class="col-lg-12 col-md-12 col-xs-12">
+
+		<?php	get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+		</div> <!-- fin de .row principal-->
 		</main><!-- #main -->
 </div><!-- #primary -->
 

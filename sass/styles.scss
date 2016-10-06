@@ -93,9 +93,9 @@ $icon-size: 1.3em;
 }
 .post-inside{
   .post-content{
-    margin-top:20px;
     padding: 20px;
     background-color:#f7f7f7;
+    margin-bottom:20px;
     .entry-title{
     margin-bottom: 20px;
     }
@@ -110,7 +110,21 @@ $icon-size: 1.3em;
   }
 }
 
+/** NAvigation posts **/
 
+nav.navigation {
+  .nav-links{
+    padding:20px 40px 40px 40px;
+    font-size:$icon-size;
+    text-transform: uppercase;
+    .nav-previous{
+      text-align:left;
+    }
+    .nav-next{
+      text-align: right;
+    }
+  }
+}
 
 /** Sidebar **/
 
