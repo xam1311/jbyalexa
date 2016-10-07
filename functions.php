@@ -119,12 +119,20 @@ function jbyalexa_scripts() {
 	wp_enqueue_script( 'jbyalexa-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'jbyalexa-tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'jbyalexa-bootstrap', get_template_directory_uri() . '/javascripts/bootstrap.min.js', array('jquery'), '20151215', true );
- wp_enqueue_script( 'jbyalexa-main', get_template_directory_uri() . '/javascripts/main.js', array('jquery'), '20151215', true );
+ 	wp_enqueue_script( 'jbyalexa-main', get_template_directory_uri() . '/javascripts/main.js', array('jquery'), '20151215', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'jbyalexa_scripts' );
+
+
+function jbyalexa_add_favicon(){ ?>
+    <!-- Custom Favicons -->
+		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon-16x16.png" sizes="16x16" />
+    <?php }
+		add_action('wp_head','jbyalexa_add_favicon');
 
 /**
  * Implement the Custom Header feature.
