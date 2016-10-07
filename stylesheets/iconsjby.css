@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'jbyalexa';
-  src:  url('fonts/jbyalexa.eot?u6ccfn');
-  src:  url('fonts/jbyalexa.eot?u6ccfn#iefix') format('embedded-opentype'),
-    url('fonts/jbyalexa.ttf?u6ccfn') format('truetype'),
-    url('fonts/jbyalexa.woff?u6ccfn') format('woff'),
-    url('fonts/jbyalexa.svg?u6ccfn#jbyalexa') format('svg');
+  src:  url('fonts/jbyalexa.eot?bufqhc');
+  src:  url('fonts/jbyalexa.eot?bufqhc#iefix') format('embedded-opentype'),
+    url('fonts/jbyalexa.ttf?bufqhc') format('truetype'),
+    url('fonts/jbyalexa.woff?bufqhc') format('woff'),
+    url('fonts/jbyalexa.svg?bufqhc#jbyalexa') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,14 +24,14 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-diamond:before {
+  content: "\e906";
+}
 .icon-category:before {
   content: "\e900";
 }
 .icon-arrow-left:before {
   content: "\e901";
-}
-.icon-arrow-right:before {
-  content: "\e908";
 }
 .icon-chat:before {
   content: "\e902";
@@ -45,13 +45,12 @@ i {
 .icon-folders:before {
   content: "\e905";
 }
-.icon-instagram:before {
-  content: "\e906";
-}
 .icon-instagram-new:before {
   content: "\e907";
 }
-
+.icon-arrow-right:before {
+  content: "\e908";
+}
 .icon-pinterest:before {
   content: "\e909";
 }
@@ -73,3 +72,4 @@ i {
 .icon-youtube:before {
   content: "\e90f";
 }
+

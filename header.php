@@ -27,12 +27,14 @@
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
           &#9776;
         </button>
+        <div id="exCollapsingNavbar2" class="collapse navbar-toggleable-xs">
         <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
+
       			<?php
                wp_nav_menu([
                     'menu'            => 'primary',
                     'theme_location'  => 'primary',
-                    'container'       => 'div',
+                    'container'       => false,
                     'container_id'    => 'exCollapsingNavbar2',
                     'container_class' => 'collapse navbar-toggleable-xs',
                     'menu_id'         => false,
@@ -42,6 +44,7 @@
                     'walker'          => new bs4navwalker()
                 ]);
       			?>
+        </div>
       </nav>
       <?php endif; ?>
     </div><!-- fin de .container-->

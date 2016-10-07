@@ -25,7 +25,7 @@
 								<div class="container">
 										<div class="row">
 														<div class="col-lg-2 col-md-2 col-xs-6">
-														<p><?php _e('Fan des bijoux d\'Alexa ?','jbyalexa'); ?><br/><strong><?php esc_html_e('ALORS SUIVEZ-MOI!','jbyalexa'); ?></strong></p>
+														<p><?php _e('Fan Alexa\'s jewelry','jbyalexa'); ?><br/><strong><?php esc_html_e('FOLLOW ME !','jbyalexa'); ?></strong></p>
 
 														</div>
 

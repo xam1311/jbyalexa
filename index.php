@@ -47,7 +47,7 @@ get_header(); ?>
 
 					<?php
 
-					the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> Précédent','next_text'=>'Suivant <i class="icon-arrow-right"></i>','screen_reader_text'=>' '));
+						the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> '.__('Previous','jbyalexa'),'next_text'=>__('Next','jbyalexa').' <i class="icon-arrow-right"></i>','screen_reader_text'=>' '));
 
 			else : ?>
 
