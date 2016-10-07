@@ -13,21 +13,34 @@ $bg-color-light: #496271;
 $bg-color-dark:#344752;
 $c-text-light:#fff;
 $color-pink:#e85898;
-$icon-size: 1.3em;
+$icon-size: 1.3rem;
 
 
-
-/** Main **/
-
-#header-nav{
-    text-transform: uppercase;
-      a{
-        color:$c-text-light;
-      }
-}
 
 /**  Header **/
-#header-nav, #footer-nav, .bg-faded{
+
+#header-nav{
+    padding-top:10px;
+    background-color: $bg-color-light;
+    text-transform: uppercase;
+      .navbar-brand{
+        margin-left:40px;
+        vertical-align: center;
+      }
+      .navbar-nav {
+        padding-top:15px;
+            li a{
+            color:$c-text-light;
+            padding:0;
+            padding-right:20px;
+          }
+       }
+       .dropdown-menu{
+         background-color: $bg-color-light;
+       }
+}
+
+ #footer-nav, .bg-faded{
   background-color: $bg-color-light;
  }
 
@@ -98,6 +111,7 @@ $icon-size: 1.3em;
     margin-bottom:20px;
     .entry-title{
     margin-bottom: 20px;
+    font-weight:500;
     }
     .read-more{
       .icon-plus-button{
@@ -134,8 +148,9 @@ nav.navigation {
   section{
     border-bottom: 1px dotted #496271;
     padding:20px 0;
-    h4 {
+    h4.widget-title {
       text-transform: uppercase;
+      font-size:1.3rem;
       color:$color-pink;
       text-align: center;
       margin-bottom:15px;

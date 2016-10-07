@@ -7724,150 +7724,168 @@ a.text-danger:hover {
   }
 }
 
-/** Main **/
+/**  Header **/
 /* line 22, ../sass/styles.scss */
 #header-nav {
+  padding-top: 10px;
+  background-color: #496271;
   text-transform: uppercase;
 }
-/* line 24, ../sass/styles.scss */
-#header-nav a {
-  color: #fff;
+/* line 26, ../sass/styles.scss */
+#header-nav .navbar-brand {
+  margin-left: 40px;
+  vertical-align: center;
 }
-
-/**  Header **/
 /* line 30, ../sass/styles.scss */
-#header-nav, #footer-nav, .bg-faded {
+#header-nav .navbar-nav {
+  padding-top: 15px;
+}
+/* line 32, ../sass/styles.scss */
+#header-nav .navbar-nav li a {
+  color: #fff;
+  padding: 0;
+  padding-right: 20px;
+}
+/* line 38, ../sass/styles.scss */
+#header-nav .dropdown-menu {
   background-color: #496271;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
+#footer-nav, .bg-faded {
+  background-color: #496271;
+}
+
+/* line 47, ../sass/styles.scss */
 #footer-nav {
   color: #fff;
 }
-/* line 36, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 #footer-nav a {
   color: #fff;
   text-decoration: none;
 }
-/* line 40, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 #footer-nav footer {
   padding: 20px 0 10px 0;
 }
-/* line 43, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 #footer-nav .footer-social ul {
   list-style-type: none;
   padding: 0;
   padding-top: 10px;
 }
-/* line 47, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 #footer-nav .footer-social ul li {
   font-size: 1.3em;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 51, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 #footer-nav .footer-social ul li i {
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
-/* line 56, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 #footer-nav .site-info {
   text-align: right;
 }
 
 /** Content Article **/
-/* line 63, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 .post-thumbnail {
   position: relative;
 }
 
-/* line 66, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .post-meta {
   position: absolute;
   bottom: 0;
   background-color: #fff;
   height: 29px;
 }
-/* line 71, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 .post-meta span {
   padding-right: 8px;
   margin: 0 8px;
 }
-/* line 74, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .post-meta span i {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   vertical-align: middle;
 }
-/* line 78, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 .post-meta span time {
   margin-left: 6px;
   margin-bottom: 4px;
 }
-/* line 83, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 .post-meta .meta-categories {
   background-color: #c3c5c6;
   text-transform: uppercase;
   color: #fff;
 }
-/* line 87, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 .post-meta .meta-categories a {
   padding-left: 8px;
   color: #fff;
 }
 
-/* line 95, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .post-inside .post-content {
   padding: 20px;
   background-color: #f7f7f7;
   margin-bottom: 20px;
 }
-/* line 99, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 .post-inside .post-content .entry-title {
   margin-bottom: 20px;
+  font-weight: 500;
 }
-/* line 103, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .post-inside .post-content .read-more .icon-plus-button {
   color: #e85898;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   padding-right: 5px;
   vertical-align: middle;
 }
 
 /** NAvigation posts **/
-/* line 116, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 nav.navigation .nav-links {
   padding: 20px 40px 40px 40px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-transform: uppercase;
 }
-/* line 120, ../sass/styles.scss */
+/* line 134, ../sass/styles.scss */
 nav.navigation .nav-links .nav-previous {
   text-align: left;
 }
-/* line 123, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 nav.navigation .nav-links .nav-next {
   text-align: right;
 }
 
 /** Sidebar **/
-/* line 131, ../sass/styles.scss */
+/* line 145, ../sass/styles.scss */
 #sidebar {
   border-left: 1px solid #d0d0d0;
   padding: 20px;
 }
-/* line 134, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 #sidebar section {
   border-bottom: 1px dotted #496271;
   padding: 20px 0;
 }
-/* line 137, ../sass/styles.scss */
-#sidebar section h4 {
+/* line 151, ../sass/styles.scss */
+#sidebar section h4.widget-title {
   text-transform: uppercase;
+  font-size: 1.3rem;
   color: #e85898;
   text-align: center;
   margin-bottom: 15px;
 }
-/* line 142, ../sass/styles.scss */
-#sidebar section h4 i {
+/* line 157, ../sass/styles.scss */
+#sidebar section h4.widget-title i {
   vertical-align: center;
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }

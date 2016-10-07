@@ -27,7 +27,7 @@
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
           &#9776;
         </button>
-          <a class="navbar-brand" href="<?php bloginfo('url')?>">Jbyalexa</a>
+        <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
       			<?php
                wp_nav_menu([
                     'menu'            => 'primary',
@@ -36,16 +36,12 @@
                     'container_id'    => 'exCollapsingNavbar2',
                     'container_class' => 'collapse navbar-toggleable-xs',
                     'menu_id'         => false,
-                    'menu_class'      => 'nav navbar-nav pull-xs-left',
-                    'depth'           => 2,
+                    'menu_class'      => 'nav navbar-nav pull-lg-right pull-md-right',
+                    'depth'           => 1,
                     'fallback_cb'     => 'bs4navwalker::fallback',
                     'walker'          => new bs4navwalker()
                 ]);
       			?>
-            <form class="form-inline pull-xs-right">
-                <input class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
       </nav>
       <?php endif; ?>
     </div><!-- fin de .container-->
