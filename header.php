@@ -27,9 +27,10 @@
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
           &#9776;
         </button>
+        <a class="navbar-brand hidden-sm-up pull-xs-right" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
         <div id="exCollapsingNavbar2" class="collapse navbar-toggleable-xs">
-        <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
-        <form action="<?php bloginfo('url')?>" id="searchform" method="get" role="search" class="form-inline pull-xs-right search-header">
+        <a class="navbar-brand hidden-sm-down" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
+        <form action="<?php bloginfo('url')?>" id="searchform" method="get" role="search" class="form-inline pull-xs-right search-header hidden-sm-down">
            <input class="form-control form-hide" type="text" placeholder="<?php _e('Search','jbyalexa'); ?>" name="s" id="search" value="<?php the_search_query(); ?>">
            <button class="btn" type="button"><i class="icon-search"></i></button>
         </form>

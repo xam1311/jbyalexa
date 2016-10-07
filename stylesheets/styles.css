@@ -7728,65 +7728,77 @@ a.text-danger:hover {
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #fff;
+  text-transform: uppercase;
+  padding-left: 25px;
 }
 
-/* line 21, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #fff;
-  opacity: 1;
-}
-
-/* line 25, ../sass/styles.scss */
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #fff;
+  text-transform: uppercase;
+  padding-left: 25px;
   opacity: 1;
 }
 
 /* line 29, ../sass/styles.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 25px;
+  opacity: 1;
+}
+
+/* line 35, ../sass/styles.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #fff;
+  text-transform: uppercase;
+  padding-left: 25px;
 }
 
 /**  Header **/
-/* line 35, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 #header-nav {
   background-color: #496271;
   text-transform: uppercase;
 }
-/* line 38, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 #header-nav .navbar {
   padding: 0;
   background-color: #496271;
 }
-/* line 42, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
+#header-nav .navbar button.navbar-toggler {
+  color: #fff;
+}
+/* line 53, ../sass/styles.scss */
 #header-nav .navbar-brand {
   margin: 20px 0 10px 40px;
   padding: 0;
   vertical-align: center;
 }
-/* line 47, ../sass/styles.scss */
+/* line 58, ../sass/styles.scss */
 #header-nav .navbar-nav {
   padding: 30px 20px 0 0;
 }
-/* line 49, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 #header-nav .navbar-nav li a {
   color: #fff;
   padding: 0;
   padding-right: 20px;
 }
-/* line 55, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 #header-nav .dropdown-menu {
   background-color: #496271;
 }
-/* line 58, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 #header-nav .search-header {
   background-color: #344752;
   color: #fff;
 }
-/* line 61, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 #header-nav .search-header input[type='text'] {
   opacity: 0;
   display: none;
@@ -7794,7 +7806,7 @@ a.text-danger:hover {
   background-color: #344752;
   color: #fff;
 }
-/* line 68, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 #header-nav .search-header .btn {
   border: none;
   outline-property: none;
@@ -7803,103 +7815,103 @@ a.text-danger:hover {
   background-color: #344752;
   color: #fff;
 }
-/* line 75, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 #header-nav .search-header .btn i {
   font-size: 1.6rem;
   vertical-align: middle;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 #footer-nav, .bg-faded {
   background-color: #496271;
 }
 
-/* line 88, ../sass/styles.scss */
+/* line 99, ../sass/styles.scss */
 #footer-nav {
   color: #fff;
 }
-/* line 90, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 #footer-nav a {
   color: #fff;
   text-decoration: none;
 }
-/* line 94, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 #footer-nav footer {
   padding: 20px 0 10px 0;
 }
-/* line 97, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 #footer-nav .footer-social ul {
   list-style-type: none;
   padding: 0;
   padding-top: 10px;
 }
-/* line 101, ../sass/styles.scss */
+/* line 112, ../sass/styles.scss */
 #footer-nav .footer-social ul li {
   font-size: 1.3em;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 105, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 #footer-nav .footer-social ul li i {
   font-size: 1.3rem;
 }
-/* line 110, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 #footer-nav .site-info {
   text-align: right;
 }
 
 /** Content Article **/
-/* line 117, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .post-thumbnail {
   position: relative;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
 .post-meta {
   position: absolute;
   bottom: 0;
   background-color: #fff;
   height: 29px;
 }
-/* line 125, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .post-meta span {
   padding-right: 8px;
   margin: 0 8px;
 }
-/* line 128, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .post-meta span i {
   font-size: 1.3rem;
   vertical-align: middle;
 }
-/* line 132, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .post-meta span time {
   margin-left: 6px;
   margin-bottom: 4px;
 }
-/* line 137, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 .post-meta .meta-categories {
   background-color: #c3c5c6;
   text-transform: uppercase;
   color: #fff;
 }
-/* line 141, ../sass/styles.scss */
+/* line 152, ../sass/styles.scss */
 .post-meta .meta-categories a {
   padding-left: 8px;
   color: #fff;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .post-inside .post-content {
   padding: 20px;
   background-color: #f7f7f7;
   margin-bottom: 20px;
 }
-/* line 153, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .post-inside .post-content .entry-title {
   margin-bottom: 20px;
   font-weight: 500;
 }
-/* line 158, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .post-inside .post-content .read-more .icon-plus-button {
   color: #e85898;
   font-size: 1.3rem;
@@ -7908,33 +7920,33 @@ a.text-danger:hover {
 }
 
 /** NAvigation posts **/
-/* line 171, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 nav.navigation .nav-links {
   padding: 20px 40px 40px 40px;
   font-size: 1.3rem;
   text-transform: uppercase;
 }
-/* line 175, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 nav.navigation .nav-links .nav-previous {
   text-align: left;
 }
-/* line 178, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 nav.navigation .nav-links .nav-next {
   text-align: right;
 }
 
 /** Sidebar **/
-/* line 186, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 #sidebar {
   border-left: 1px solid #d0d0d0;
   padding: 20px;
 }
-/* line 189, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 #sidebar section {
   border-bottom: 1px dotted #496271;
   padding: 20px 0;
 }
-/* line 192, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 #sidebar section h4.widget-title {
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -7942,7 +7954,7 @@ nav.navigation .nav-links .nav-next {
   text-align: center;
   margin-bottom: 15px;
 }
-/* line 198, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 #sidebar section h4.widget-title i {
   vertical-align: center;
   font-size: 1.3rem;

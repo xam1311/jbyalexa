@@ -17,17 +17,25 @@ $icon-size: 1.3rem;
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:   $c-text-light;
+    text-transform:uppercase;
+    padding-left:25px;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:     $c-text-light;
+   text-transform:uppercase;
+   padding-left:25px;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:     $c-text-light;
+   text-transform:uppercase;
+   padding-left:25px;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:     $c-text-light;
+   text-transform:uppercase;
+   padding-left:25px;
 }
 
 /**  Header **/
@@ -38,6 +46,9 @@ $icon-size: 1.3rem;
       .navbar{
         padding:0;
         background-color: $bg-color-light;
+        button.navbar-toggler{
+          color:$c-text-light;
+        }
       }
       .navbar-brand{
         margin:20px 0 10px 40px;
