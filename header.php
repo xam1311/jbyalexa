@@ -29,8 +29,8 @@
         </button>
         <div id="exCollapsingNavbar2" class="collapse navbar-toggleable-xs">
         <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
-        <form class="form-inline pull-xs-right search-header">
-          <input class="form-control" type="text" placeholder="<?php _e('Search','jbyalexa'); ?>">
+        <form action="<?php bloginfo('url')?>" id="searchform" method="get" role="search" class="form-inline pull-xs-right search-header">
+           <input class="form-control form-hide" type="text" placeholder="<?php _e('Search','jbyalexa'); ?>" name="s" id="search" value="<?php the_search_query(); ?>">
            <button class="btn" type="button"><i class="icon-search"></i></button>
         </form>
       			<?php

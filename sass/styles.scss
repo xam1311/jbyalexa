@@ -15,7 +15,20 @@ $c-text-light:#fff;
 $color-pink:#e85898;
 $icon-size: 1.3rem;
 
-
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:   $c-text-light;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:     $c-text-light;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:     $c-text-light;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:     $c-text-light;
+}
 
 /**  Header **/
 
@@ -42,17 +55,28 @@ $icon-size: 1.3rem;
        .dropdown-menu{
          background-color: $bg-color-light;
        }
-       .search-header .btn {
-         border:none;
+       .search-header {
          background-color: $bg-color-dark;
-         outline-property:none;
-         padding:30px;
-         height:84px;
+         color: $c-text-light;
+         input[type='text']{
+           opacity:0;
+           display:none;
+           border:none;
+           background-color: $bg-color-dark;
+           color: $c-text-light;
+         }
+         .btn {
+           border:none;
+           outline-property:none;
+           padding:30px;
+           height:84px;
+           background-color: $bg-color-dark;
+           color: $c-text-light;
+          i{
+           font-size:1.6rem;
+           vertical-align: middle;
+         }
 
-        i{
-         color:#fff;
-         font-size:1.6rem;
-         vertical-align: middle;
        }
      }
 }
@@ -96,7 +120,7 @@ $icon-size: 1.3rem;
 .post-meta {
   position: absolute;
   bottom:0;
-  background-color: #fff;
+  background-color: $c-text-light;
   height:29px;
   span{
     padding-right: 8px;
