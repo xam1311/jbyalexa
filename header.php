@@ -29,7 +29,10 @@
         </button>
         <div id="exCollapsingNavbar2" class="collapse navbar-toggleable-xs">
         <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo get_template_directory_uri().'/stylesheets/img/logo.png'; ?>"/></a>
-
+        <form class="form-inline pull-xs-right search-header">
+          <input class="form-control" type="text" placeholder="<?php _e('Search','jbyalexa'); ?>">
+           <button class="btn" type="button"><i class="icon-search"></i></button>
+        </form>
       			<?php
                wp_nav_menu([
                     'menu'            => 'primary',
@@ -44,6 +47,7 @@
                     'walker'          => new bs4navwalker()
                 ]);
       			?>
+
         </div>
       </nav>
       <?php endif; ?>

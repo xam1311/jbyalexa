@@ -15,7 +15,7 @@
 
 <div class="container-fluid" id="instagram-responsive">
 	<div class="row">
-					<div class="col-lg-12 col-md-12 col-xs-12">
+					<div class="col-lg-12 col-md-12 hidden-sm-down">
 						<?php echo do_shortcode('[instagram-feed]'); ?>
 					</div>
 	</div>
