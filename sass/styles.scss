@@ -63,7 +63,7 @@ $icon-size: 1.3rem;
             padding-right:20px;
           }
           li.active{
-            
+
           }
        }
        .dropdown-menu{
@@ -128,6 +128,14 @@ $icon-size: 1.3rem;
 
 
 /** Content Article **/
+h1.page-title{
+  margin-top:65px;
+  font-weight:300;
+  color:$bg-color-light;
+}
+h2.post-title{
+  color:$bg-color-light;
+}
 .post-thumbnail{
   position:relative;
 }
