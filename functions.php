@@ -46,7 +46,7 @@ function jbyalexa_setup() {
 			  // additional image sizes
 				add_image_size( 'post-big', 930, 593, true );
 				add_image_size( 'post-h-thumbnails', 274, 269, true );
-			  add_image_size( 'category-thumb', 300, 130, true );
+			    add_image_size( 'category-thumb', 300, 130, true );
 
 				// This theme uses wp_nav_menu() in one location.
 				register_nav_menus( array(
