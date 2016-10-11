@@ -46,7 +46,7 @@ function jbyalexa_setup() {
 			  // additional image sizes
 				add_image_size( 'post-big', 930, 593, true );
 				add_image_size( 'post-h-thumbnails', 274, 269, true );
-			    add_image_size( 'category-thumb', 300, 130, true );
+			    add_image_size( 'category-thumb', 269, 134, true );
 
 				// This theme uses wp_nav_menu() in one location.
 				register_nav_menus( array(
@@ -102,9 +102,17 @@ function jbyalexa_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'jbyalexa' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h3 class="widget-title"><i class="icon-"></i>',
+		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+
+
+	add_filter( 'wpiw_img_class', 'my_instagram_class' );
+
+	function my_instagram_class( $classes ) {
+	    $classes = "img-fluid";
+	    return $classes;
+	}
 }
 add_action( 'widgets_init', 'jbyalexa_widgets_init' );
 

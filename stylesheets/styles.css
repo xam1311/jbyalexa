@@ -7970,6 +7970,11 @@ nav.navigation .nav-links .nav-next {
   padding: 20px 0;
 }
 /* line 224, ../sass/styles.scss */
+#sidebar section ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 228, ../sass/styles.scss */
 #sidebar section h3.widget-title {
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -7978,8 +7983,51 @@ nav.navigation .nav-links .nav-next {
   text-align: center;
   margin-bottom: 15px;
 }
-/* line 231, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 #sidebar section h3.widget-title i {
+  padding-right: 10px;
   vertical-align: center;
   font-size: 1.3rem;
+}
+/* line 241, ../sass/styles.scss */
+#sidebar section.sidebar-about {
+  text-align: center;
+}
+/* line 243, ../sass/styles.scss */
+#sidebar section.sidebar-about img {
+  margin: 0 auto;
+}
+/* line 248, ../sass/styles.scss */
+#sidebar section.sidebar-about ul#menu-social li {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding-right: 12px;
+}
+/* line 252, ../sass/styles.scss */
+#sidebar section.sidebar-about ul#menu-social li i {
+  color: #a9abac;
+}
+/* line 257, ../sass/styles.scss */
+#sidebar section.sidebar-about p {
+  text-align: justify;
+}
+/* line 262, ../sass/styles.scss */
+#sidebar section.sidebar-categories div.FeaturedImageTax--item {
+  background-color: red;
+  position: relative;
+}
+/* line 265, ../sass/styles.scss */
+#sidebar section.sidebar-categories div.FeaturedImageTax--item span {
+  display: inline-block;
+  background-color: #344752;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  padding: 0 5px;
+  right: 0;
+  bottom: 0;
+}
+/* line 277, ../sass/styles.scss */
+#sidebar section:last-of-type {
+  border-bottom: none;
 }
