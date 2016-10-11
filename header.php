@@ -56,7 +56,3 @@
 </div>
 <div class="container">
   <div class="row">
-			<!--	<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
-
-			$description = get_bloginfo( 'description', 'display' );-->

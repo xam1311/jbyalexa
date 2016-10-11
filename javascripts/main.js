@@ -21,7 +21,5 @@ $(function() {
           console.info('Animation hide');
         });
       }
-
-
-    });
+    });  
 });

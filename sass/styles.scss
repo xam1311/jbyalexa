@@ -56,16 +56,20 @@ $icon-size: 1.3rem;
         vertical-align: center;
       }
       .navbar-nav {
-            padding:30px 20px 0 0;
-            li a{
-            color:$c-text-light;
-            padding:0;
-            padding-right:20px;
-          }
-          li.active{
-
-          }
-       }
+            li {
+              &:hover{
+                background-color:$bg-color-dark;
+              }
+              &.active{
+                background-color:$bg-color-dark;
+              }
+              a{
+              color:$c-text-light;
+              padding:30px;
+              height:84px;
+              }
+             }
+        }
        .dropdown-menu{
          background-color: $bg-color-light;
        }
@@ -129,11 +133,12 @@ $icon-size: 1.3rem;
 
 /** Content Article **/
 h1.page-title{
-  margin-top:65px;
+  margin-top:40px;
   font-weight:300;
   color:$bg-color-light;
 }
 h2.post-title{
+  font-weight:300;
   color:$bg-color-light;
 }
 .post-thumbnail{
@@ -173,11 +178,15 @@ h2.post-title{
     padding: 20px;
     background-color:#f7f7f7;
     margin-bottom:20px;
-    .entry-title{
+    h2.entry-title{
     margin-bottom: 20px;
-    font-weight:500;
     }
     .read-more{
+      &:hover span{
+        display:inline-block;
+        padding-bottom:1px;
+        border-bottom:1px solid #212f37;
+      }
       .icon-plus-button{
         color:$color-pink;
         font-size:$icon-size;
@@ -188,7 +197,7 @@ h2.post-title{
   }
 }
 
-/** NAvigation posts **/
+/** Navigation posts **/
 
 nav.navigation {
   .nav-links{
@@ -212,7 +221,7 @@ nav.navigation {
   section{
     border-bottom: 1px dotted #496271;
     padding:20px 0;
-    h4.widget-title {
+    h3.widget-title {
       text-transform: uppercase;
       font-size:1.2rem;
       font-weight:400;
@@ -227,9 +236,7 @@ nav.navigation {
     &.sidebar-about
     {
       &::before{
-        content:'<i class="icon-diamond"></i> ';
       }
     }
-
   }
 }
