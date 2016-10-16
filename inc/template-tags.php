@@ -22,7 +22,7 @@ function jbyalexa_posted_on() {
 		esc_html_x( '%s', 'post date', 'jbyalexa' ),
 		$time_string
 	);
-	$comments_count = wp_count_comments();
+	$comments_count = wp_count_comments(get_the_ID());
 
 	echo '<span class="meta-posted"><i class="icon-time"></i>' . $posted_on . '</span>';
 	echo '<span class="meta-categories">';
@@ -33,12 +33,9 @@ function jbyalexa_posted_on() {
 	endforeach;
 
 	echo '</span>';
-	if( $comments_count->approved > 0 ):
 
 	echo '<span class="meta-comments">';
 	echo '<a href="'.get_comments_link().'"><i class="icon-communication"></i> ' . $comments_count->approved . '</span></a>';
-
- 	endif;
 
 }
 endif;
