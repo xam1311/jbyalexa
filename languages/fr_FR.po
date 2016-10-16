@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: jbyalexa\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
 "POT-Creation-Date: 2016-10-16 10:56+0100\n"
-"PO-Revision-Date: 2016-10-16 10:58+0100\n"
+"PO-Revision-Date: 2016-10-16 11:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -69,11 +69,11 @@ msgstr "Les commentaires sont fermés"
 
 #: comments.php:87
 msgid "Your Good Name"
-msgstr ""
+msgstr "Votre Nom"
 
 #: comments.php:93
 msgid "Your Email Please"
-msgstr ""
+msgstr "Votre Email"
 
 #: comments.php:103
 msgid "Let us know what you have to say:"
