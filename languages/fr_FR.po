@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jbyalexa\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-10-16 10:56+0100\n"
-"PO-Revision-Date: 2016-10-16 11:03+0100\n"
+"POT-Creation-Date: 2016-10-16 11:55+0100\n"
+"PO-Revision-Date: 2016-10-16 11:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -27,6 +27,7 @@ msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
+"Rien n'a été trouvé, essayez un des liens ci-dessous our la recherche ?"
 
 #: 404.php:33
 msgid "Most Used Categories"
@@ -36,7 +37,7 @@ msgstr "Catégories les plus lus"
 #: 404.php:51
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
+msgstr "Regardez dans les archives mensuelles %1$s"
 
 #: archive.php:47 home.php:77 index.php:54 search.php:44
 msgid "Previous"
@@ -68,16 +69,20 @@ msgid "Comments are closed."
 msgstr "Les commentaires sont fermés"
 
 #: comments.php:87
-msgid "Your Good Name"
-msgstr "Votre Nom"
+msgid "Your Name"
+msgstr "Votre pseudo"
 
 #: comments.php:93
-msgid "Your Email Please"
-msgstr "Votre Email"
+msgid "Email"
+msgstr "Email"
 
 #: comments.php:103
-msgid "Let us know what you have to say:"
-msgstr ""
+msgid "Your comment"
+msgstr "Votre commentaire"
+
+#: comments.php:83
+msgid "Got Something To Say"
+msgstr "Laisser votre commentaire"
 
 #: footer.php:28
 msgid "Fan Alexa's jewelry"
@@ -92,12 +97,12 @@ msgid "Copyright &#xa9; "
 msgstr "Tous droits réservés &#xa9; "
 
 #: functions.php:53
-msgid "Menu principal"
-msgstr ""
+msgid "Main Menu"
+msgstr "Menu principal"
 
 #: functions.php:54
-msgid " Menu social"
-msgstr ""
+msgid "Social Menu"
+msgstr "Menu réseaux sociaux"
 
 #: functions.php:100
 msgid "Sidebar"
@@ -114,7 +119,7 @@ msgstr "Recherche..."
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:54 inc/template-tags.php:60
 msgid ", "
-msgstr ""
+msgstr ","
 
 #: inc/template-tags.php:56
 #, php-format
@@ -172,3 +177,9 @@ msgstr "La recherche peut vous aider"
 #: template-parts/content-page.php:22
 msgid "Pages:"
 msgstr "Pages:"
+
+#~ msgid "Your Good Name"
+#~ msgstr "Votre Nom"
+
+#~ msgid "Your Email Please"
+#~ msgstr "Votre Email"

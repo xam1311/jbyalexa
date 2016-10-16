@@ -80,17 +80,17 @@ if ( post_password_required() ) {
 	endif;
 
 
-$comment_args = array( 'title_reply'=>'Got Something To Say:',
+$comment_args = array( 'title_reply'=>__('Got Something To Say','jbyalexa',
 
 			'fields' => apply_filters( 'comment_form_default_fields', array(
 
-			'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Your Good Name' ) . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
+			'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Your Name','jbyalexa' ) . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
 
-			        '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"/></p>',   
+			        '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"c/></p>',   
 
 			    'email'  => '<p class="comment-form-email">' .
 
-			                '<label for="email">' . __( 'Your Email Please' ) . '</label> ' .
+			                '<label for="email">' . __( 'Email','jbyalexa' ) . '</label> ' .
 
 			                ( $req ? '<span>*</span>' : '' ) .
 
@@ -100,7 +100,7 @@ $comment_args = array( 'title_reply'=>'Got Something To Say:',
 
 			    'comment_field' => '<p>' .
 
-			                '<label for="comment">' . __( 'Let us know what you have to say:' ) . '</label>' .
+			                '<label for="comment">' . __( 'Your comment', 'jbyalexa' ) . '</label>' .
 
 			                '<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>' .
 

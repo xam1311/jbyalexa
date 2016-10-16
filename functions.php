@@ -50,8 +50,8 @@ function jbyalexa_setup() {
 
 				// This theme uses wp_nav_menu() in one location.
 				register_nav_menus( array(
-					'primary' => esc_html__( 'Menu principal', 'jbyalexa' ),
-					'social' => esc_html__(' Menu social', 'jbyalexa'),
+					'primary' => esc_html__( 'Main Menu', 'jbyalexa' ),
+					'social' => esc_html__('Social Menu', 'jbyalexa'),
 				) );
 
 				/*
