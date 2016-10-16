@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jbyalexa\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-10-16 10:55+0100\n"
-"PO-Revision-Date: 2016-10-16 11:54+0100\n"
+"POT-Creation-Date: 2016-10-16 19:10+0100\n"
+"PO-Revision-Date: 2016-10-16 19:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -46,37 +46,47 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
-#: comments.php:31
+#. translators: %s: post title
+#: comments.php:33
 #, php-format
-msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid "One thought on &ldquo;%s&rdquo;"
 msgstr ""
 
-#: comments.php:40 comments.php:61
+#: comments.php:38
+#, php-format
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:53 comments.php:74
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:43 comments.php:64
+#: comments.php:56 comments.php:77
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:44 comments.php:65
+#: comments.php:57 comments.php:78
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:78
+#: comments.php:91
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:87
-msgid "Your Good Name"
+#: comments.php:96
+msgid "Got Something To Say"
 msgstr ""
 
-#: comments.php:93
-msgid "Your Email Please"
+#: comments.php:100
+msgid "Your Name"
 msgstr ""
 
-#: comments.php:103
-msgid "Let us know what you have to say:"
+#: comments.php:106
+msgid "Email"
+msgstr ""
+
+#: comments.php:116
+msgid "Your comment"
 msgstr ""
 
 #: footer.php:28
@@ -92,11 +102,11 @@ msgid "Copyright &#xa9; "
 msgstr ""
 
 #: functions.php:53
-msgid "Menu principal"
+msgid "Main Menu"
 msgstr ""
 
 #: functions.php:54
-msgid " Menu social"
+msgid "Social Menu"
 msgstr ""
 
 #: functions.php:100
@@ -167,4 +177,12 @@ msgstr ""
 
 #: template-parts/content-page.php:22
 msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:27 template-parts/content.php:32
+msgid "no picture"
+msgstr ""
+
+#: template-parts/content.php:55
+msgid "Read next"
 msgstr ""
