@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jbyalexa\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-10-09 11:57+0100\n"
-"PO-Revision-Date: 2016-10-09 12:00+0100\n"
+"POT-Creation-Date: 2016-10-16 10:56+0100\n"
+"PO-Revision-Date: 2016-10-16 10:58+0100\n"
 "Last-Translator: \n"
-"Language-Team: xa@designmyco.de\n"
+"Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.4\n"
-"X-Poedit-KeywordsList: _e;__;_n;_x;esc_html_e;esc_html__;_nx\n"
+"X-Poedit-KeywordsList: _e;__;_n;_x;esc_html_e;esc_html__;_nx;_nx\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -38,11 +38,11 @@ msgstr "Catégories les plus lus"
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: archive.php:43 home.php:74 index.php:50 search.php:40
+#: archive.php:47 home.php:77 index.php:54 search.php:44
 msgid "Previous"
 msgstr "Précédent"
 
-#: archive.php:43 home.php:74 index.php:50 search.php:40
+#: archive.php:47 home.php:77 index.php:54 search.php:44
 msgid "Next"
 msgstr "Suivant"
 
@@ -66,6 +66,18 @@ msgstr "Nouveaux commentaires"
 #: comments.php:78
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés"
+
+#: comments.php:87
+msgid "Your Good Name"
+msgstr ""
+
+#: comments.php:93
+msgid "Your Email Please"
+msgstr ""
+
+#: comments.php:103
+msgid "Let us know what you have to say:"
+msgstr ""
 
 #: footer.php:28
 msgid "Fan Alexa's jewelry"
@@ -127,7 +139,7 @@ msgstr ""
 msgid "Edit %s"
 msgstr "Editer %s"
 
-#: search.php:19
+#: search.php:23
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Résultats de recherche pour : %s"
