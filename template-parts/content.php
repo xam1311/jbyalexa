@@ -23,10 +23,10 @@ $count = get_query_var('count');
 				else: ?>
 						<?php if( is_home() or is_front_page()): ?>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="image manquante"/>
+								<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
 							</a>
 						<?php else: ?>
-							<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="image manquante"/>
+							<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
 				 		<?php	endif; ?>
 			<?php endif; ?>
 
@@ -48,7 +48,7 @@ $count = get_query_var('count');
 						<?php 	if ( !is_single() ) : ?>
 						<div class="post-entry entry-excerpt">
 							<?php the_excerpt(); ?>
-							<a href="<?php echo get_permalink(); ?>" class="read-more"><i class="icon-plus-button"></i><span>Lire la suite</span></a>
+							<a href="<?php echo get_permalink(); ?>" class="read-more"><i class="icon-plus-button"></i><span><?php _e('Read next','jbyalexa');?></span></a>
 
 						<?php else: ?>
 							<div class="entry entry-fullcontent">
