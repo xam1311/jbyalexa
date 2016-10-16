@@ -22,11 +22,15 @@ $count = get_query_var('count');
 							 endif;
 				else: ?>
 						<?php if( is_home() or is_front_page()): ?>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
-							</a>
+							<figure>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+									<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
+								</a>
+							</figure>
 						<?php else: ?>
+							<figure>
 							<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
+							</figure>
 				 		<?php	endif; ?>
 			<?php endif; ?>
 

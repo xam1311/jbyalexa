@@ -46,6 +46,7 @@ $icon-size: 1.3rem;
       .navbar{
         padding:0;
         background-color: $bg-color-light;
+
         button.navbar-toggler{
           color:$c-text-light;
         }
@@ -56,6 +57,9 @@ $icon-size: 1.3rem;
         vertical-align: center;
       }
       .navbar-nav {
+            .nav-item + .nav-item{
+              margin-left: inherit;
+            }
             li {
               &:hover{
                 background-color:$bg-color-dark;
@@ -143,7 +147,43 @@ h2.post-title{
 }
 .post-thumbnail{
   position:relative;
+  &::before{
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  &:hover::before{
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+  }
 }
+
+/*** animation thumbnail **/
+.hover14 figure {
+  position: relative;
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/** Infos meta article **/
 .post-meta {
   position: absolute;
   bottom:0;
@@ -181,6 +221,9 @@ h2.post-title{
     h2.entry-title{
     margin-bottom: 20px;
     }
+
+
+
     .read-more{
       &:hover span{
         display:inline-block;
@@ -205,7 +248,7 @@ nav.navigation {
     font-size:$icon-size;
     text-transform: uppercase;
     .nav-previous{
-      text-align:left;
+      float:left;
     }
     .nav-next{
       text-align: right;
@@ -244,7 +287,7 @@ nav.navigation {
           margin:0 auto;
         }
         text-align:center;
-        ul#menu-social{
+        ul.menu{
           li{
             display:inline-block;
             font-size:$icon-size;
