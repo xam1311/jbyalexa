@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jbyalexa\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-10-16 11:55+0100\n"
-"PO-Revision-Date: 2016-10-16 11:56+0100\n"
+"POT-Creation-Date: 2016-10-16 18:58+0100\n"
+"PO-Revision-Date: 2016-10-16 18:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.7.4\n"
-"X-Poedit-KeywordsList: _e;__;_n;_x;esc_html_e;esc_html__;_nx;_nx\n"
+"X-Poedit-KeywordsList: _e;__;_n;_x;esc_html_e;esc_html__;_nx\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -68,6 +68,10 @@ msgstr "Nouveaux commentaires"
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés"
 
+#: comments.php:83
+msgid "Got Something To Say"
+msgstr "Laisser votre commentaire"
+
 #: comments.php:87
 msgid "Your Name"
 msgstr "Votre pseudo"
@@ -79,10 +83,6 @@ msgstr "Email"
 #: comments.php:103
 msgid "Your comment"
 msgstr "Votre commentaire"
-
-#: comments.php:83
-msgid "Got Something To Say"
-msgstr "Laisser votre commentaire"
 
 #: footer.php:28
 msgid "Fan Alexa's jewelry"
@@ -177,6 +177,14 @@ msgstr "La recherche peut vous aider"
 #: template-parts/content-page.php:22
 msgid "Pages:"
 msgstr "Pages:"
+
+#: template-parts/content.php:27 template-parts/content.php:32
+msgid "no picture"
+msgstr "Image manquante"
+
+#: template-parts/content.php:55
+msgid "Read next"
+msgstr "Lire la suite"
 
 #~ msgid "Your Good Name"
 #~ msgstr "Votre Nom"

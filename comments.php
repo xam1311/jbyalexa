@@ -80,7 +80,7 @@ if ( post_password_required() ) {
 	endif;
 
 
-$comment_args = array( 'title_reply'=>__('Got Something To Say','jbyalexa',
+$comment_args = array( 'title_reply'=>__('Got Something To Say','jbyalexa'),
 
 			'fields' => apply_filters( 'comment_form_default_fields', array(
 
