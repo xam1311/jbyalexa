@@ -28,7 +28,7 @@ get_header(); ?>
 			</div>
 
 			<div class="col-lg-12 col-md-12 col-xs-12">
-			<?php the_post_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> Précédent','next_text'=>'Suivant <i class="icon-arrow-right"></i>','screen_reader_text'=>' ')); ?>
+			<?php	the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> '.__('Previous','jbyalexa'),'next_text'=>__('Next','jbyalexa').' <i class="icon-arrow-right"></i>','screen_reader_text'=>' ')); ?>
 			</div>
 
 			<?php
