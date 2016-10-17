@@ -1,22 +1,23 @@
-# Copyright (C) 2016 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: jbyalexa\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-10-16 19:10+0100\n"
-"PO-Revision-Date: 2016-10-16 19:10+0100\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-17 10:24+0200\n"
+"PO-Revision-Date: 2016-10-17 10:24+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
-"X-Poedit-KeywordsList: _e;__;_n;_x;esc_html_e;esc_html__;_nx\n"
-"X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
@@ -32,60 +33,56 @@ msgstr ""
 msgid "Most Used Categories"
 msgstr ""
 
-#. translators: %1$s: smiley
 #: 404.php:51
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: archive.php:47 home.php:77 index.php:54 search.php:44
+#: archive.php:47 home.php:77 index.php:54 search.php:44 single.php:31
 msgid "Previous"
 msgstr ""
 
-#: archive.php:47 home.php:77 index.php:54 search.php:44
+#: archive.php:47 home.php:77 index.php:54 search.php:44 single.php:31
 msgid "Next"
 msgstr ""
 
-#. translators: %s: post title
-#: comments.php:33
+#: comments.php:30
 #, php-format
-msgid "One thought on &ldquo;%s&rdquo;"
-msgstr ""
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
 
-#: comments.php:38
-#, php-format
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgstr ""
-
-#: comments.php:53 comments.php:74
+#: comments.php:37 comments.php:58
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:56 comments.php:77
+#: comments.php:40 comments.php:61
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:57 comments.php:78
+#: comments.php:41 comments.php:62
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:91
+#: comments.php:75
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:96
+#: comments.php:80
 msgid "Got Something To Say"
 msgstr ""
 
-#: comments.php:100
+#: comments.php:84
 msgid "Your Name"
 msgstr ""
 
-#: comments.php:106
+#: comments.php:90
 msgid "Email"
 msgstr ""
 
-#: comments.php:116
+#: comments.php:100
 msgid "Your comment"
 msgstr ""
 
@@ -121,36 +118,39 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:54 inc/template-tags.php:60
+#: search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/template-tags.php:22
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:51 inc/template-tags.php:57
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:56
+#: inc/template-tags.php:53
 #, php-format
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:62
+#: inc/template-tags.php:59
 #, php-format
 msgid "Tagged %1$s"
 msgstr ""
 
-#. translators: %s: post title
-#: inc/template-tags.php:69
+#: inc/template-tags.php:66
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
-#. translators: %s: Name of current post
-#: inc/template-tags.php:76 template-parts/content-page.php:33
+#: inc/template-tags.php:73 template-parts/content-page.php:33
 #, php-format
 msgid "Edit %s"
-msgstr ""
-
-#: search.php:23
-#, php-format
-msgid "Search Results for: %s"
 msgstr ""
 
 #: template-parts/content-none.php:14

@@ -25,28 +25,12 @@ if ( post_password_required() ) {
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
-				<h2 class="comments-title">
-			<?php
-				$comments_number = get_comments_number();
-				if ( 1 === $comments_number ) {
-					/* translators: %s: post title */
-					printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'jbyalexa' ), get_the_title() );
-				} else {
-					printf(
-						/* translators: 1: number of comments, 2: post title */
-						_nx(
-							'%1$s thought on &ldquo;%2$s&rdquo;',
-							'%1$s thoughts on &ldquo;%2$s&rdquo;',
-							$comments_number,
-							'comments title',
-							'jbyalexa'
-						),
-						number_format_i18n( $comments_number ),
-						get_the_title()
-					);
-				}
-			?>
-		</h2>
+			<h2 class="comments-title">
+				<?php
+					printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'jbyalexa' ),
+						number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+				?>
+			</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
@@ -99,7 +83,7 @@ $comment_args = array( 'title_reply'=>__('Got Something To Say','jbyalexa'),
 
 			'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Your Name','jbyalexa' ) . '</label> ' . ( $req ? '<span>*</span>' : '' ) .
 
-			        '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"c/></p>',   
+			        '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"c/></p>',
 
 			    'email'  => '<p class="comment-form-email">' .
 

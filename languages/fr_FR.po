@@ -1,202 +1,187 @@
-# Copyright (C) 2016 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: jbyalexa\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-10-16 19:10+0100\n"
-"PO-Revision-Date: 2016-10-16 19:10+0100\n"
-"Last-Translator: \n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-17 10:25+0200\n"
+"PO-Revision-Date: 2016-10-17 10:27+0200\n"
 "Language-Team: \n"
-"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
-"X-Poedit-KeywordsList: _e;__;_n;_x;esc_html_e;esc_html__;_nx\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Generator: Poedit 1.8.10\n"
+"Last-Translator: \n"
+"Language: fr\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oups ! Cette page ne peut être trouvé."
+msgstr ""
 
 #: 404.php:21
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Rien n'a été trouvé, essayez un des liens ci-dessous our la recherche ?"
 
 #: 404.php:33
 msgid "Most Used Categories"
-msgstr "Catégories les plus lus"
+msgstr ""
 
-#. translators: %1$s: smiley
 #: 404.php:51
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Regardez dans les archives mensuelles %1$s"
+msgstr ""
 
-#: archive.php:47 home.php:77 index.php:54 search.php:44
+#: archive.php:47 home.php:77 index.php:54 search.php:44 single.php:31
 msgid "Previous"
 msgstr "Précédent"
 
-#: archive.php:47 home.php:77 index.php:54 search.php:44
+#: archive.php:47 home.php:77 index.php:54 search.php:44 single.php:31
 msgid "Next"
 msgstr "Suivant"
 
-#. translators: %s: post title
-#: comments.php:33
+#: comments.php:30
 #, php-format
-msgid "One thought on &ldquo;%s&rdquo;"
-msgstr "Un commentaire sur &ldquo;%s&rdquo;"
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commentaire pour &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commentaires pour &ldquo;%2$s&rdquo;"
 
-#: comments.php:38
-#, php-format
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgstr "%1$s commentaires sur &ldquo;%2$s&rdquo;"
-
-#: comments.php:53 comments.php:74
+#: comments.php:37 comments.php:58
 msgid "Comment navigation"
-msgstr "Navigation des commentaires"
+msgstr ""
 
-#: comments.php:56 comments.php:77
+#: comments.php:40 comments.php:61
 msgid "Older Comments"
-msgstr "Anciens commentaires"
+msgstr ""
 
-#: comments.php:57 comments.php:78
+#: comments.php:41 comments.php:62
 msgid "Newer Comments"
-msgstr "Nouveaux commentaires"
+msgstr ""
 
-#: comments.php:91
+#: comments.php:75
 msgid "Comments are closed."
-msgstr "Les commentaires sont fermés"
+msgstr ""
 
-#: comments.php:96
+#: comments.php:80
 msgid "Got Something To Say"
-msgstr "Laisser votre commentaire"
+msgstr ""
+
+#: comments.php:84
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:90
+msgid "Email"
+msgstr ""
 
 #: comments.php:100
-msgid "Your Name"
-msgstr "Votre pseudo"
-
-#: comments.php:106
-msgid "Email"
-msgstr "Email"
-
-#: comments.php:116
 msgid "Your comment"
-msgstr "Votre commentaire"
+msgstr ""
 
 #: footer.php:28
 msgid "Fan Alexa's jewelry"
-msgstr "Fan des bijoux d'Alexa ?"
+msgstr ""
 
 #: footer.php:28
 msgid "FOLLOW ME !"
-msgstr "ALORS SUIVEZ MOI !"
+msgstr ""
 
 #: footer.php:43
 msgid "Copyright &#xa9; "
-msgstr "Tous droits réservés &#xa9; "
+msgstr ""
 
 #: functions.php:53
 msgid "Main Menu"
-msgstr "Menu principal"
+msgstr ""
 
 #: functions.php:54
 msgid "Social Menu"
-msgstr "Menu réseaux sociaux"
+msgstr ""
 
 #: functions.php:100
 msgid "Sidebar"
-msgstr "Sidebar"
+msgstr ""
 
 #: functions.php:102
 msgid "Add widgets here."
-msgstr "Ajouter les widgets ici."
+msgstr ""
 
 #: header.php:34
 msgid "Search"
-msgstr "Recherche..."
-
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:54 inc/template-tags.php:60
-msgid ", "
-msgstr ","
-
-#: inc/template-tags.php:56
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Posté dans %1$s"
-
-#: inc/template-tags.php:62
-#, php-format
-msgid "Tagged %1$s"
-msgstr "Taggé %1$s"
-
-#. translators: %s: post title
-#: inc/template-tags.php:69
-#, php-format
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-"Laisser un commentaire<span class=\"screen-reader-text\"> pour %s</span>"
-
-#. translators: %s: Name of current post
-#: inc/template-tags.php:76 template-parts/content-page.php:33
-#, php-format
-msgid "Edit %s"
-msgstr "Editer %s"
+msgstr "Recherche"
 
 #: search.php:23
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Résultats de recherche pour : %s"
+msgstr ""
+
+#: inc/template-tags.php:22
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:51 inc/template-tags.php:57
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:66
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:73 template-parts/content-page.php:33
+#, php-format
+msgid "Edit %s"
+msgstr ""
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
-msgstr "Il n'y pas d'article pour l'instant"
+msgstr ""
 
 #: template-parts/content-none.php:21
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"Prêt à publier votre premier article ?  <a href=\"%1$s\">Commencez ici</a>."
 
 #: template-parts/content-none.php:25
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Désolé, aucun résultat ne correspond à votre recherche. Merci de recommencer "
-"avec des mots clés différents."
 
 #: template-parts/content-none.php:31
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr "La recherche peut vous aider"
+msgstr ""
 
 #: template-parts/content-page.php:22
 msgid "Pages:"
-msgstr "Pages:"
+msgstr ""
 
 #: template-parts/content.php:27 template-parts/content.php:32
 msgid "no picture"
-msgstr "Image manquante"
+msgstr ""
 
 #: template-parts/content.php:55
 msgid "Read next"
-msgstr "Lire la suite"
-
-#~ msgid "One thought on &ldquo;%2$s&rdquo;"
-#~ msgstr "Un commentaire pour &ldquo;%2$s&rdquo;"
-
-#~ msgid "Your Good Name"
-#~ msgstr "Votre Nom"
-
-#~ msgid "Your Email Please"
-#~ msgstr "Votre Email"
+msgstr ""
