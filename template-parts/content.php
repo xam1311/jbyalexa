@@ -52,7 +52,7 @@ $count = get_query_var('count');
 						<?php 	if ( !is_single() ) : ?>
 						<div class="post-entry entry-excerpt">
 							<?php the_excerpt(); ?>
-							<a href="<?php echo get_permalink(); ?>" class="read-more"><i class="icon-plus-button"></i><span><?php _e('Read next','jbyalexa');?></span></a>
+							<a href="<?php echo get_permalink(); ?>" class="read-more" title="<?php  __('Read next','jbyalexa').' '.the_title(); ?>"><i class="icon-plus-button"></i><span><?php _e('Read next','jbyalexa');?></span></a>
 
 						<?php else: ?>
 							<div class="entry entry-fullcontent">
