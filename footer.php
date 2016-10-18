@@ -13,6 +13,7 @@
 	</div><!-- fin de .row global-->
 </div><!-- #container-->
 
+<?php if ( shortcode_exists( 'instagram-feed' ) ) :?>
 <div class="container-fluid" id="instagram-responsive">
 	<div class="row">
 					<div class="col-lg-12 col-md-12 hidden-sm-down">
@@ -20,6 +21,7 @@
 					</div>
 	</div>
 </div>
+<?php endif;?>
 	<div class="container-fluid" id="footer-nav">
 					<footer>
 								<div class="container">
