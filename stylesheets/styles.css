@@ -6629,7 +6629,6 @@ h2.post-title {
 .comments-form {
   margin: 0 30px;
   background-color: #f2f3f3;
-  padding: 30px;
 }
 .comments-form .comment-reply-title {
   color: #e85898;
@@ -6649,15 +6648,47 @@ h2.post-title {
   text-transform: uppercase;
 }
 
-.comments-area {
-  border: 1px solid #dcdcdc;
-  margin: 20px 30px 0 30px;
+.comments-area, .comment-respond {
+  /*    border:1px solid #dcdcdc;*/
   padding: 30px;
 }
-.comments-area h2.comments-title {
+.comments-area h2.comments-title, .comments-area h3.comment-reply-title, .comment-respond h2.comments-title, .comment-respond h3.comment-reply-title {
   color: #e85898;
   text-align: center;
   text-transform: uppercase;
+}
+.comments-area input[type="submit"], .comment-respond input[type="submit"] {
+  float: right;
+  background-color: #e85697;
+  border-color: #e85697;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.comment-list li {
+  list-style-type: none;
+  padding: 1rem;
+}
+.comment-list li.adminComment {
+  background-color: #f2f3f3;
+}
+.comment-list img {
+  float: left;
+  margin-right: 0.25rem;
+}
+.comment-list .comment-card-right {
+  border-left: 1px solid #dcdcdc;
+  padding-left: 1rem;
+}
+.comment-list a.comment-reply-link {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #e85697;
+  border-color: #e85697;
+  float: right;
 }
 
 /** Navigation posts **/
@@ -6702,10 +6733,11 @@ nav.navigation .nav-links i {
   font-size: 1.3rem;
 }
 #sidebar section.sidebar-about p {
-  text-align: center !important;
+  text-align: justify !important;
 }
 #sidebar section.sidebar-about p > img {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 #sidebar section.sidebar-about ul.menu {
   text-align: center;
