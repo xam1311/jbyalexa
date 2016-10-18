@@ -13,6 +13,7 @@ $bg-color-light: #496271;
 $bg-color-dark:#344752;
 $c-text-light:#fff;
 $color-pink:#e85898;
+$color-button:#e85697;
 $icon-size: 1.3rem;
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -136,18 +137,17 @@ $icon-size: 1.3rem;
 
 
 /** Content Article **/
+
 h1.page-title{
   margin-top:40px;
-  font-weight:300;
   color:$bg-color-light;
 }
 h2.post-title{
-  font-weight:300;
   color:$bg-color-light;
 }
 .post-thumbnail{
   position:relative;
-  figure{
+  /*figure{
     position:relative;
       &::before{
         position: absolute;
@@ -167,13 +167,10 @@ h2.post-title{
       -webkit-animation: shine .75s;
       animation: shine .75s;
       }
-   }
+   }*/
 }
 
 /*** animation thumbnail **/
-.hover14 figure {
-  position: relative;
-}
 
 @-webkit-keyframes shine {
   100% {
@@ -225,8 +222,6 @@ h2.post-title{
     margin-bottom: 20px;
     }
 
-
-
     .read-more{
       &:hover span{
         display:inline-block;
@@ -243,6 +238,39 @@ h2.post-title{
   }
 }
 
+.comments-form{
+  margin:0 30px;
+  background-color:#f2f3f3;
+  padding:30px;
+  .comment-reply-title{
+    color:$color-pink;
+    text-align:center;
+    text-transform: uppercase;
+    font-size:1.4rem;
+    i{
+      vertical-align: middle;
+      margin-right:10px;
+    }
+  }
+  input[type="submit"]{
+    float:right;
+    background-color:$color-button;
+    border-color:$color-button;
+    color:$c-text-light;
+    text-transform: uppercase;
+  }
+}
+.comments-area{
+    border:1px solid #dcdcdc;
+    margin:20px 30px 0 30px;
+    padding:30px;
+    h2.comments-title{
+      color:$color-pink;
+      text-align:center;
+      text-transform: uppercase;
+    }
+}
+
 /** Navigation posts **/
 
 nav.navigation {
@@ -255,6 +283,9 @@ nav.navigation {
     }
     .nav-next{
       text-align: right;
+    }
+    i{
+      vertical-align: top;
     }
   }
 }
@@ -274,23 +305,25 @@ nav.navigation {
     h3.widget-title {
       text-transform: uppercase;
       font-size:1.2rem;
-      font-weight:400;
       color:$color-pink;
       text-align: center;
       margin-bottom:15px;
       i{
         padding-right: 10px;
-        vertical-align: center;
+        vertical-align: middle;
         font-size:$icon-size;
       }
     }
   &.sidebar-about
     {
-        img{
-          margin:0 auto;
+        p{
+          text-align:center!important;
+          &>img{
+            text-align:center;
+          }
         }
-        text-align:center;
         ul.menu{
+          text-align:center;
           li{
             display:inline-block;
             font-size:$icon-size;
@@ -300,9 +333,7 @@ nav.navigation {
             }
           }
         }
-        p{
-          text-align:justify;
-        }
+
     }
   &.sidebar-categories{
     div.FeaturedImageTax--item{

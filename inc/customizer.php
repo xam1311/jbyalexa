@@ -24,3 +24,13 @@ function jbyalexa_customize_preview_js() {
 	wp_enqueue_script( 'jbyalexa_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'jbyalexa_customize_preview_js' );
+
+
+function new_excerpt_more($more) {
+
+	global $post;
+	return '<p>
+	<a href="'.get_permalink($post->ID).'" class="read-more" title="'.__('Read next','jbyalexa').' '.get_the_title($post->ID).' "><i class="icon-plus-button"></i><span>'.__('Read next','jbyalexa').'</span></a></p>';
+
+}
+add_filter('excerpt_more', 'new_excerpt_more');

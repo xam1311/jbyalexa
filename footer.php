@@ -42,8 +42,7 @@
 														<div class="col-lg-6 col-md-6 col-xs-12 site-info">
 															<p>
 
-															<?php _e('Copyright &#xa9; '.date('Y').' JbyAlexa <br/> Design by <a href="https://anne-b.fr" target="_blank" rel="Theme Design">Anne-b</a> / Dev by <a href="https://twitter.com/Xam1311" target="_blank" rel="Theme Dev">@Xam1311</a>','jbyalexa');?>
-
+															<?php _e('Copyright &#xa9;','jbyalexa'); echo date('Y').' JbyAlexa'; ?> <br/> <?php _e('Design by ','jbyalexa'); ?> <a href="https://anne-b.fr" target="_blank" rel="Theme Design">Anne-b</a> / <?php _e('Dev by','jbyalexa');?> <a href="https://twitter.com/Xam1311" target="_blank" rel="Theme Dev">@Xam1311</a>
 															</p>
 														</div><!-- .site-info -->
 
