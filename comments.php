@@ -38,7 +38,7 @@ $comment_args = array( 'title_reply'=>'<i class="icon-communication"></i>'.__('G
 
 												        '<input id="author" name="author" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" ' . $aria_req . '/></div>',
 
-												    'email'  => '<div class="comment-form-email">' .
+												    'email'  => '<div class="form-group">' .
 
 												                '<label for="email">' . __( 'Email','jbyalexa' ) . '</label> ' .
 
@@ -50,7 +50,7 @@ $comment_args = array( 'title_reply'=>'<i class="icon-communication"></i>'.__('G
 
 														'id_form'           => 'commentform',
 													  'class_form'      => 'comment-form',
-														'comment_notes_before' => '<p class="comment-notes">' . __( 'Don\'t be shy for comment, it\'s easy you just have to  write in the input with “*”. Your email address will not be published.','jbyalexa' ) . ( $req ? $required_text : '' ) . '</p>',
+														'comment_notes_before' => '<p class="comment-notes">' . __( 'Don\'t be shy for comment, it\'s easy you just have to  write in the input with “*”. Your email address will not be published.','jbyalexa' ).'</p>',
 												    'comment_field' => '<div class="form-group">' .
 
 												                '<label for="comment">' . __( 'Your comment', 'jbyalexa' ) . '</label>' .
@@ -86,12 +86,12 @@ if ( have_comments() ) : ?>
 <div class="comments-area clearfix">
 
 
-		<h2 class="comments-title"><i class="icon-communication"></i>
+		<h3 class="comments-title"><i class="icon-communication"></i>
 			<?php
 				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'jbyalexa' ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
-		</h2>
+		</h3>
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 	<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">

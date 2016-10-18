@@ -120,9 +120,6 @@ add_action( 'widgets_init', 'jbyalexa_widgets_init' );
 
 function jbyalexa_comment($comment, $args, $depth) {
 
-	/*var_dump($args); var_dump($comment);*/
-	var_dump($comment);
-	$format_date = '';
     if ( 'div' === $args['style'] ) {
         $tag       = 'div';
         $add_below = 'comment';

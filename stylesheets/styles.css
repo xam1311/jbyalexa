@@ -6627,7 +6627,7 @@ h2.post-title {
 }
 
 .comments-form {
-  margin: 0 30px;
+  margin: 20px 30px;
   background-color: #f2f3f3;
 }
 .comments-form .comment-reply-title {
@@ -6641,7 +6641,6 @@ h2.post-title {
   margin-right: 10px;
 }
 .comments-form input[type="submit"] {
-  float: right;
   background-color: #e85697;
   border-color: #e85697;
   color: #fff;
@@ -6652,19 +6651,21 @@ h2.post-title {
   /*    border:1px solid #dcdcdc;*/
   padding: 30px;
 }
-.comments-area h2.comments-title, .comments-area h3.comment-reply-title, .comment-respond h2.comments-title, .comment-respond h3.comment-reply-title {
+.comments-area h3.comments-title, .comments-area h3.comment-reply-title, .comment-respond h3.comments-title, .comment-respond h3.comment-reply-title {
   color: #e85898;
   text-align: center;
   text-transform: uppercase;
 }
 .comments-area input[type="submit"], .comment-respond input[type="submit"] {
-  float: right;
   background-color: #e85697;
   border-color: #e85697;
   color: #fff;
   text-transform: uppercase;
 }
 
+.comment-list {
+  padding: 0;
+}
 .comment-list li {
   list-style-type: none;
   padding: 1rem;

@@ -239,7 +239,7 @@ h2.post-title{
 }
 
 .comments-form{
-  margin:0 30px;
+  margin:20px 30px;
   background-color:#f2f3f3;
   .comment-reply-title{
     color:$color-pink;
@@ -252,7 +252,6 @@ h2.post-title{
     }
   }
   input[type="submit"]{
-    float:right;
     background-color:$color-button;
     border-color:$color-button;
     color:$c-text-light;
@@ -262,13 +261,12 @@ h2.post-title{
 .comments-area, .comment-respond{
 /*    border:1px solid #dcdcdc;*/
     padding:30px;
-    h2.comments-title, h3.comment-reply-title{
+    h3.comments-title, h3.comment-reply-title{
       color:$color-pink;
       text-align:center;
       text-transform: uppercase;
     }
     input[type="submit"]{
-      float:right;
       background-color:$color-button;
       border-color:$color-button;
       color:$c-text-light;
@@ -277,6 +275,7 @@ h2.post-title{
 }
 
 .comment-list{
+  padding:0;
   li{
     list-style-type: none;
     padding:1rem;
