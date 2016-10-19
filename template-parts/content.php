@@ -17,10 +17,10 @@ $count = get_query_var('count');
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 								<img src="<?php the_post_thumbnail_url('post-big') ?>" class="attachment-post-big wp-post-image img-fluid"/>
 								</a>
-							<?php else:
-								 the_post_thumbnail('post-big');
-							 endif;
-				else: ?>
+							<?php else: ?>
+								 	<img src="<?php the_post_thumbnail_url('post-big') ?>" class="attachment-post-big wp-post-image img-fluid"/>
+							 <?php endif; ?>
+			<?php	else: ?>
 						<?php if( is_home() or is_front_page()): ?>
 							<figure>
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -52,7 +52,7 @@ $count = get_query_var('count');
 						<?php 	if ( !is_single() ) : ?>
 						<div class="post-entry entry-excerpt">
 							<?php the_excerpt(); ?>
-						
+
 						<?php else: ?>
 							<div class="entry entry-fullcontent">
 								<?php the_content(); ?>

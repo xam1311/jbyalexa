@@ -55,7 +55,16 @@ $icon-size: 1.3rem;
       .navbar-brand{
         margin:20px 0 10px 40px;
         padding:0;
-        vertical-align: center;
+          /** Tablet ipad **/
+        @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
+            margin:20px 0 0 0;
+          }
+        /* petites résolutions */
+        @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+            margin:0 2rem 0 0;
+          }
+
+
       }
       .navbar-nav {
             .nav-item + .nav-item{
@@ -68,10 +77,19 @@ $icon-size: 1.3rem;
               &.active{
                 background-color:$bg-color-dark;
               }
-              a{
+              a.nav-link{
               color:$c-text-light;
               padding:30px;
               height:84px;
+                /** Tablet ipad **/
+                @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
+                  padding:30px 5px 0 0;
+                  height:50px;
+                }
+                @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+                    padding:0;
+                    height:50px;
+                }
               }
              }
         }
@@ -116,6 +134,9 @@ $icon-size: 1.3rem;
   }
   footer{
     padding: 20px 0 10px 0;
+    @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+        padding:5px 0;
+      }
   }
   .footer-social ul {
     list-style-type: none;
@@ -240,6 +261,9 @@ h2.post-title{
 
 .comments-form{
   margin:20px 30px;
+  @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+      margin:20px 0;
+    }
   background-color:#f2f3f3;
   .comment-reply-title{
     color:$color-pink;
