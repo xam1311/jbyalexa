@@ -28,14 +28,14 @@ function jbyalexa_posted_on() {
 	echo '<span class="meta-categories">';
 	foreach((get_the_category()) as $category):
 		$category_link = get_category_link( $category->cat_ID);
-		echo '<a href="'.esc_url( $category_link ).'">'. $category->cat_name.' </a>';
+		echo '<a href="'.esc_url( $category_link ).'" title="'.__('Click to see post from','jbyalexa').' '.$category->cat_name.'">'. $category->cat_name.' </a>';
 
 	endforeach;
 
 	echo '</span>';
 
 	echo '<span class="meta-comments">';
-	echo '<a href="'.get_comments_link().'"><i class="icon-communication"></i> ' . $comments_count->approved . '</span></a>';
+	echo '<a href="'.get_comments_link().'" title="'.__('Please comment !','jbyalexa').'"><i class="icon-communication"></i> ' . $comments_count->approved . '</span></a>';
 
 }
 endif;

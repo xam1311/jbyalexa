@@ -84,11 +84,9 @@ $icon-size: 1.3rem;
                 /** Tablet ipad **/
                 @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
                   padding:30px 5px 0 0;
-                  height:50px;
                 }
                 @media screen and (max-width:  map-get($container-max-widths,'sm')) {
                     padding:0;
-                    height:50px;
                 }
               }
              }
@@ -306,25 +304,33 @@ h2.post-title{
     &.adminComment{
       background-color:#f2f3f3;
     }
+    &>ul.children li{
+      padding:0;
+      padding-top:1rem;
     }
-  img{
-    float:left;
-    margin-right:0.25rem;
-  }
-  .comment-card-right{
-    border-left:1px solid #dcdcdc;
-    padding-left:1rem;
-  }
-  a.comment-reply-link{
-    display:inline-block;
-    padding:0.5rem 2rem;
-    color:$c-text-light;
-    text-transform: uppercase;
-    font-size:1rem;
-    background-color:$color-button;
-    border-color:$color-button;
-    float:right;
-  }
+    }
+  .comment-body{
+        border-bottom :1px solid #dcdcdc;
+        padding-bottom:1rem;
+        img{
+          float:left;
+          margin-right:0.25rem;
+        }
+        .comment-card-right{
+          border-left:1px solid #dcdcdc;
+          padding-left:1rem;
+        }
+        a.comment-reply-link{
+          display:inline-block;
+          padding:0.5rem 2rem;
+          color:$c-text-light;
+          text-transform: uppercase;
+          font-size:1rem;
+          background-color:$color-button;
+          border-color:$color-button;
+          float:right;
+        }
+       }
 }
 
 /** Navigation posts **/

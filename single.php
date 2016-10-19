@@ -10,9 +10,9 @@
 get_header(); ?>
 
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-<div id="primary" class="col-md-9 col-xs-12 col-xl-9 col-sm-8">
-<?php else: ?>
-<div id="primary" class="col-md-12 col-xs-12 col-xl-12 col-sm-12">
+	<div id="primary" class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-xs-12">
+	<?php else: ?>
+	<div id="primary" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <?php endif; ?>
 	<main id="main" class="site-main" role="main">
 
@@ -20,14 +20,14 @@ get_header(); ?>
 		<div class="row">
 
 			<?php		while ( have_posts() ) : the_post(); ?>
-			<div class="col-lg-12 col-md-12 col-xs-12">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
 
 			</div>
 
-			<div class="col-lg-12 col-md-12 col-xs-12">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<?php	the_posts_navigation(array('prev_text'=>'<i class="icon-arrow-left"></i> '.__('Previous','jbyalexa'),'next_text'=>__('Next','jbyalexa').' <i class="icon-arrow-right"></i>','screen_reader_text'=>' ')); ?>
 			</div>
 

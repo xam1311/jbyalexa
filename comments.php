@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="col-lg-12 col-md-12 col-xs-12" id="comments">
+<div class="col-xl-12 col-lg-12 col-md-12 col-xs-12" id="comments">
 
 <?php if ( comments_open()): ?>
 <div class="comments-form clearfix">
