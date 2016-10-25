@@ -25,8 +25,8 @@ get_header(); ?>
 		if ( have_posts() ) :
 			/* Start the Loop */
 			$count = 0;
-			/** on mets les tailles imgs à big **/
 			$imgSize = 'big';
+			/** on mets les tailles imgs à big **/
 			?>
 			<div class="row">
 			<?php	if( $count == 0):?>
@@ -39,13 +39,19 @@ get_header(); ?>
 
 			<?php endif;
 						while ( have_posts() ) : the_post();
-						$count++;
+
+								$count++;
 								if( $count == 2 ): ?>
+
 								</div>
 								<div class="row other-frontpage">
+
 								<?php endif;
+
 								if( $count == 2 or $count == 3): ?>
+
 								<?php $imgSize= 'medium'; ?>
+
 								<div class="col-lg-6 col-md-6 col-xs-12">
 
 								<?php endif;
@@ -56,7 +62,6 @@ get_header(); ?>
 									 */
 							  set_query_var( 'count', $count );
 								set_query_var( 'img-size', $imgSize );
-
 								get_template_part( 'template-parts/content', get_post_format() );
 
 							if( $count == 2 or $count == 3 ): ?>

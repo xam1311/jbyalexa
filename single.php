@@ -20,7 +20,7 @@ get_header(); ?>
 		<div class="row">
 
 			<?php		while ( have_posts() ) : the_post(); ?>
-				<?php $imgSize = 'big'; ?>
+			<?php 	$imgSize = 'big';	set_query_var( 'img-size', $imgSize );  ?>
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
