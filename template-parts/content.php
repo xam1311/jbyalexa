@@ -13,7 +13,7 @@ $count = get_query_var('count');
 					<div class="post-thumbnail">
 					<?php
 					if ( has_post_thumbnail() ) :
-							if( is_home() or is_front_page()): ?>
+						 if( is_home() or is_front_page() or is_category()): ?>
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 								<img src="<?php the_post_thumbnail_url('post-big') ?>" class="attachment-post-big wp-post-image img-fluid"/>
 								</a>
@@ -21,7 +21,7 @@ $count = get_query_var('count');
 									the_post_thumbnail('post-big', array('class' => 'attachment-post-big wp-post-image responsive-full', 'title' => get_the_title()));
 							 endif; ?>
 			<?php	else: ?>
-						<?php if( is_home() or is_front_page()): ?>
+						<?php if( is_home() or is_front_page() or is_category()): ?>
 							<figure>
 								<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 									<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
@@ -42,14 +42,14 @@ $count = get_query_var('count');
 
 					<div class="post-content entry-content">
 					<h2 class="post-title entry-title">
-							<?php if( is_home() or is_front_page()): ?>
+						<?php if( is_home() or is_front_page() or is_category()): ?>
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 						<?php else:?>
 							<?php the_title(); ?>
 						<?php endif; ?>
 					</h2><!--/.post-title-->
 
-						<?php if( is_home() or is_front_page()): ?>
+						<?php if( is_home() or is_front_page() or is_category()): ?>
 						<div class="post-entry entry-excerpt">
 							<?php    if( strpos( $post->post_content, '<!--more-->' ) ) {
 												        the_content();
@@ -61,6 +61,6 @@ $count = get_query_var('count');
 							<div class="entry entry-fullcontent">
 								<?php the_content(); ?>
 						<?php endif; ?>
-					</div><!--/.entry-->
+					</div><!--/.post-entry-->
 			</div>
-			</article><!-- #post-## -->
+			</article>
