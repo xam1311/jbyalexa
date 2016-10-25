@@ -6562,6 +6562,9 @@ a.text-danger:hover {
 h1.page-title {
   margin-top: 2rem;
   color: #e85898;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2.post-title {

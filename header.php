@@ -43,7 +43,7 @@
                     'container_class' => 'collapse navbar-toggleable-xs',
                     'menu_id'         => false,
                     'menu_class'      => 'nav navbar-nav pull-lg-right pull-md-right',
-                    'depth'           => 1,
+                    'depth'           => 2,
                     'fallback_cb'     => 'bs4navwalker::fallback',
                     'walker'          => new bs4navwalker()
                 ]);
