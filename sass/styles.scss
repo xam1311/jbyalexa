@@ -19,24 +19,24 @@ $icon-size: 1.3rem;
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:   $c-text-light;
     text-transform:uppercase;
-    padding-left:25px;
+    padding-left:2.1rem;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:     $c-text-light;
    text-transform:uppercase;
-   padding-left:25px;
+   padding-left:2.1rem;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:     $c-text-light;
    text-transform:uppercase;
-   padding-left:25px;
+   padding-left:2.1rem;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:     $c-text-light;
    text-transform:uppercase;
-   padding-left:25px;
+   padding-left:2.1rem;
 }
 
 /**  Header **/
@@ -53,11 +53,11 @@ $icon-size: 1.3rem;
         }
       }
       .navbar-brand{
-        margin:20px 0 10px 40px;
+        margin:1.5rem 0 0.4rem 2.5rem;
         padding:0;
           /** Tablet ipad **/
         @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
-            margin:20px 0 0 0;
+            margin:1.5rem 0 0 0;
           }
         /* petites résolutions */
         @media screen and (max-width:  map-get($container-max-widths,'sm')) {
@@ -79,11 +79,11 @@ $icon-size: 1.3rem;
               }
               a.nav-link{
               color:$c-text-light;
-              padding:30px;
+              padding:2rem;
               height:84px;
                 /** Tablet ipad **/
                 @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
-                  padding:30px 5px 0 0;
+                  padding:2rem 0.2rem 0 0;
                 }
                 @media screen and (max-width:  map-get($container-max-widths,'sm')) {
                     padding:0;
@@ -107,7 +107,7 @@ $icon-size: 1.3rem;
          .btn {
            border:none;
            outline-property:none;
-           padding:30px;
+           padding:2rem;
            height:84px;
            background-color: $bg-color-dark;
            color: $c-text-light;
@@ -131,14 +131,14 @@ $icon-size: 1.3rem;
     text-decoration:none;
   }
   footer{
-    padding: 20px 0 10px 0;
+    padding: 1.5rem 0 1rem 0;
     @media screen and (max-width:  map-get($container-max-widths,'sm')) {
-        padding:5px 0;
+        padding:0.4rem 0;
       }
   }
   .footer-social ul {
     list-style-type: none;
-    padding:0;
+    padding:inherit;
     padding-top: 10px;
     li{
     font-size:1.3em;
@@ -158,48 +158,14 @@ $icon-size: 1.3rem;
 /** Content Article **/
 
 h1.page-title{
-  margin-top:40px;
-  color:$bg-color-light;
+  margin-top:2rem;
+  color:$color-pink;
 }
 h2.post-title{
   color:$bg-color-light;
 }
 .post-thumbnail{
   position:relative;
-  /*figure{
-    position:relative;
-      &::before{
-        position: absolute;
-        top: 0;
-        left: -75%;
-        z-index: 2;
-        display: block;
-        content: '';
-        width: 50%;
-        height: 100%;
-        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-        -webkit-transform: skewX(-25deg);
-        transform: skewX(-25deg);
-      }
-      &:hover::before{
-      -webkit-animation: shine .75s;
-      animation: shine .75s;
-      }
-   }*/
-}
-
-/*** animation thumbnail **/
-
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-@keyframes shine {
-  100% {
-    left: 125%;
-  }
 }
 
 /** Infos meta article **/
@@ -356,10 +322,10 @@ nav.navigation {
 
 #sidebar{
   border-left:1px solid #d0d0d0;
-  padding: 20px;
+  padding: 1.5rem;
   section{
     border-bottom: 1px dotted $bg-color-light;
-    padding:20px 0;
+    padding:1.5rem 0;
     ul{
       list-style-type:none;
       padding:0;
@@ -369,9 +335,9 @@ nav.navigation {
       font-size:1.2rem;
       color:$color-pink;
       text-align: center;
-      margin-bottom:15px;
+      margin-bottom:1rem;
       i{
-        padding-right: 10px;
+        padding-right: 0.8rem;
         vertical-align: middle;
         font-size:$icon-size;
       }
@@ -400,15 +366,15 @@ nav.navigation {
     }
   &.sidebar-categories{
     div.FeaturedImageTax--item{
-      background-color:red;
       position:relative;
+      margin-bottom:0.4rem;
     span{
       display:inline-block;
       background-color: $bg-color-dark;
       text-transform: uppercase;
       color:$c-text-light;
       position:absolute;
-      padding:0 5px;
+      padding:0 0.2rem;
       right:0;
       bottom:0;
     }

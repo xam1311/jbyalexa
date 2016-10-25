@@ -29,7 +29,7 @@ $count = get_query_var('count');
 							</figure>
 						<?php else: ?>
 							<figure>
-							<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
+								<img src="https://placehold.it/930x593" class="attachment-post-big wp-post-image img-fluid" alt="<?php _e('no picture','jbyalexa')?>"/>
 							</figure>
 				 		<?php	endif; ?>
 			<?php endif; ?>

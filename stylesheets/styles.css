@@ -6416,14 +6416,14 @@ a.text-danger:hover {
   /* WebKit, Blink, Edge */
   color: #fff;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 2.1rem;
 }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #fff;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 2.1rem;
   opacity: 1;
 }
 
@@ -6431,7 +6431,7 @@ a.text-danger:hover {
   /* Mozilla Firefox 19+ */
   color: #fff;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 2.1rem;
   opacity: 1;
 }
 
@@ -6439,7 +6439,7 @@ a.text-danger:hover {
   /* Internet Explorer 10-11 */
   color: #fff;
   text-transform: uppercase;
-  padding-left: 25px;
+  padding-left: 2.1rem;
 }
 
 /**  Header **/
@@ -6455,14 +6455,14 @@ a.text-danger:hover {
   color: #fff;
 }
 #header-nav .navbar-brand {
-  margin: 20px 0 10px 40px;
+  margin: 1.5rem 0 0.4rem 2.5rem;
   padding: 0;
   /** Tablet ipad **/
   /* petites r├®solutions */
 }
 @media screen and (min-width: 720px) and (max-width: 768px) {
   #header-nav .navbar-brand {
-    margin: 20px 0 0 0;
+    margin: 1.5rem 0 0 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -6481,13 +6481,13 @@ a.text-danger:hover {
 }
 #header-nav .navbar-nav li a.nav-link {
   color: #fff;
-  padding: 30px;
+  padding: 2rem;
   height: 84px;
   /** Tablet ipad **/
 }
 @media screen and (min-width: 720px) and (max-width: 768px) {
   #header-nav .navbar-nav li a.nav-link {
-    padding: 30px 5px 0 0;
+    padding: 2rem 0.2rem 0 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -6512,7 +6512,7 @@ a.text-danger:hover {
 #header-nav .search-header .btn {
   border: none;
   outline-property: none;
-  padding: 30px;
+  padding: 2rem;
   height: 84px;
   background-color: #344752;
   color: #fff;
@@ -6534,16 +6534,16 @@ a.text-danger:hover {
   text-decoration: none;
 }
 #footer-nav footer {
-  padding: 20px 0 10px 0;
+  padding: 1.5rem 0 1rem 0;
 }
 @media screen and (max-width: 576px) {
   #footer-nav footer {
-    padding: 5px 0;
+    padding: 0.4rem 0;
   }
 }
 #footer-nav .footer-social ul {
   list-style-type: none;
-  padding: 0;
+  padding: inherit;
   padding-top: 10px;
 }
 #footer-nav .footer-social ul li {
@@ -6560,8 +6560,8 @@ a.text-danger:hover {
 
 /** Content Article **/
 h1.page-title {
-  margin-top: 40px;
-  color: #496271;
+  margin-top: 2rem;
+  color: #e85898;
 }
 
 h2.post-title {
@@ -6570,40 +6570,8 @@ h2.post-title {
 
 .post-thumbnail {
   position: relative;
-  /*figure{
-    position:relative;
-      &::before{
-        position: absolute;
-        top: 0;
-        left: -75%;
-        z-index: 2;
-        display: block;
-        content: '';
-        width: 50%;
-        height: 100%;
-        background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-        background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-        -webkit-transform: skewX(-25deg);
-        transform: skewX(-25deg);
-      }
-      &:hover::before{
-      -webkit-animation: shine .75s;
-      animation: shine .75s;
-      }
-   }*/
 }
 
-/*** animation thumbnail **/
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-@keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
 /** Infos meta article **/
 .post-meta {
   position: absolute;
@@ -6752,11 +6720,11 @@ nav.navigation .nav-links i {
 /** Sidebar **/
 #sidebar {
   border-left: 1px solid #d0d0d0;
-  padding: 20px;
+  padding: 1.5rem;
 }
 #sidebar section {
   border-bottom: 1px dotted #496271;
-  padding: 20px 0;
+  padding: 1.5rem 0;
 }
 #sidebar section ul {
   list-style-type: none;
@@ -6767,10 +6735,10 @@ nav.navigation .nav-links i {
   font-size: 1.2rem;
   color: #e85898;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 #sidebar section h3.widget-title i {
-  padding-right: 10px;
+  padding-right: 0.8rem;
   vertical-align: middle;
   font-size: 1.3rem;
 }
@@ -6793,8 +6761,8 @@ nav.navigation .nav-links i {
   color: #a9abac;
 }
 #sidebar section.sidebar-categories div.FeaturedImageTax--item {
-  background-color: red;
   position: relative;
+  margin-bottom: 0.4rem;
 }
 #sidebar section.sidebar-categories div.FeaturedImageTax--item span {
   display: inline-block;
@@ -6802,7 +6770,7 @@ nav.navigation .nav-links i {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  padding: 0 5px;
+  padding: 0 0.2rem;
   right: 0;
   bottom: 0;
 }
