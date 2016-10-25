@@ -49,18 +49,18 @@ $count = get_query_var('count');
 						<?php endif; ?>
 					</h2><!--/.post-title-->
 
-						<?php 	if ( !is_single() ) : ?>
+						<?php if( is_home() or is_front_page()): ?>
 						<div class="post-entry entry-excerpt">
-							<?php the_excerpt(); ?>
-
+							<?php    if( strpos( $post->post_content, '<!--more-->' ) ) {
+												        the_content();
+												    }
+												    else {
+												        the_excerpt();
+												    } ?>
 						<?php else: ?>
 							<div class="entry entry-fullcontent">
 								<?php the_content(); ?>
 						<?php endif; ?>
 					</div><!--/.entry-->
-			<?php 	if ( !is_single() ) : ?>
-			</div>
-			<?php endif; ?>
-
 			</div>
 			</article><!-- #post-## -->
