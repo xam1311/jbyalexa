@@ -34,6 +34,7 @@ get_header(); ?>
 
 					/* Start the Loop */
 					$count = 0;
+					$imgSize = 'big';
 					while ( have_posts() ) : the_post();
 					$count++;
 					set_query_var( 'count_loop', $count );

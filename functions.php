@@ -45,8 +45,8 @@ function jbyalexa_setup() {
 				set_post_thumbnail_size( 400, 260, true ); // default Post Thumbnail dimensions (cropped)
 			  // additional image sizes
 				add_image_size( 'post-big', 930, 593, true );
-				add_image_size( 'post-h-thumbnails', 274, 269, true );
-			    add_image_size( 'category-thumb', 269, 134, true );
+				add_image_size( 'post-medium', 465, 297, true );
+			  add_image_size( 'category-thumb', 269, 134, true );
 
 				// This theme uses wp_nav_menu() in one location.
 				register_nav_menus( array(
