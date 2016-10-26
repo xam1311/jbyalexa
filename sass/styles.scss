@@ -52,19 +52,22 @@ $icon-size: 1.3rem;
         }
       }
       .navbar-brand{
-        margin:1.5rem 0 0.4rem 2.5rem;
+        margin:1rem 0 0.4rem 2.5rem;
         padding:0;
-          /** Tablet ipad **/
-        @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
+        /** Tablet ipad **/
+        @include media-breakpoint-only(xs) {
+          margin:0;
+        }
+        @include media-breakpoint-only(md){
             margin:1.5rem 0 0 0;
-          }
+        }
         /* petites résolutions */
-        @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+        @include media-breakpoint-only(sm){
             margin:0 2rem 0 0;
-          }
-
-
+        }
       }
+
+
       .navbar-nav {
             .nav-item + .nav-item{
               margin-left: inherit;
@@ -78,13 +81,16 @@ $icon-size: 1.3rem;
               padding:2rem;
               height:84px;
               color:$c-text-light;
-                /** Tablet ipad **/
-                @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
+                @include media-breakpoint-only(xs) {
+                  padding:0.4rem;
+                  height: 40px;
+                }
+                @include media-breakpoint-only(md){
                   padding:2rem 0.2rem 0 0;
                 }
-                @media screen and (max-width:  map-get($container-max-widths,'sm')) {
-                    padding:0.4rem;
-                    height: 40px;
+                /** Tablet ipad **/
+                @include media-breakpoint-only(lg) {
+                 padding:1.5rem;
                 }
               }
              }
@@ -101,28 +107,31 @@ $icon-size: 1.3rem;
              }
         }
 
+
        .search-header {
          background-color: $bg-color-dark;
          color: $c-text-light;
-         input[type='text']{
+         input[type='text'].form-control{
            opacity:0;
            display:none;
            border:none;
            background-color: $bg-color-dark;
            color: $c-text-light;
+           @include media-breakpoint-only(lg) {
+            padding:1rem;
+           }
          }
          .btn {
            border:none;
-           outline-property:none;
+           outline:none;
            padding:2rem;
            height:84px;
            background-color: $bg-color-dark;
            color: $c-text-light;
           i{
            font-size:1.6rem;
-           vertical-align: middle;
+           vertical-align: text-top;
          }
-
        }
      }
 }
@@ -150,8 +159,12 @@ h2.post-title{
   background-color: $c-text-light;
   height:29px;
   span{
-    padding-right: 8px;
-    margin:0 8px;
+    padding-right: 0.3rem;
+    margin:0 0.3rem;
+    @include media-breakpoint-only(xs) {
+      padding-right:.2rem;
+      margin:0.2rem;
+    }
     i{
       font-size:$icon-size;
       vertical-align: middle;

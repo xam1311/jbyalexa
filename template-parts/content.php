@@ -52,12 +52,11 @@ $imgSize = get_query_var('img-size');
 
 						<?php if( is_home() or is_front_page() or is_category()): ?>
 						<div class="post-entry entry-excerpt">
-							<?php    if( strpos( $post->post_content, '<!--more-->' ) ) {
+							<?php    if( strpos( $post->post_content, '<!--more-->' ) ):
 												        the_content();
-												    }
-												    else {
+												    else:
 												        the_excerpt();
-												    } ?>
+														endif;?>
 						<?php else: ?>
 							<div class="entry entry-fullcontent">
 								<?php the_content(); ?>

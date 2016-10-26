@@ -6455,21 +6455,28 @@ a.text-danger:hover {
   color: #fff;
 }
 #header-nav .navbar-brand {
-  margin: 1.5rem 0 0.4rem 2.5rem;
+  margin: 1rem 0 0.4rem 2.5rem;
   padding: 0;
   /** Tablet ipad **/
   /* petites r├®solutions */
 }
-@media screen and (min-width: 720px) and (max-width: 768px) {
+@media (max-width: 543px) {
+  #header-nav .navbar-brand {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   #header-nav .navbar-brand {
     margin: 1.5rem 0 0 0;
   }
 }
-@media screen and (max-width: 576px) {
+
+@media (min-width: 544px) and (max-width: 767px) {
   #header-nav .navbar-brand {
     margin: 0 2rem 0 0;
   }
 }
+
 #header-nav .navbar-nav .nav-item + .nav-item {
   margin-left: inherit;
 }
@@ -6483,17 +6490,24 @@ a.text-danger:hover {
   color: #fff;
   /** Tablet ipad **/
 }
-@media screen and (min-width: 720px) and (max-width: 768px) {
-  #header-nav .navbar-nav li a.nav-link {
-    padding: 2rem 0.2rem 0 0;
-  }
-}
-@media screen and (max-width: 576px) {
+@media (max-width: 543px) {
   #header-nav .navbar-nav li a.nav-link {
     padding: 0.4rem;
     height: 40px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-nav .navbar-nav li a.nav-link {
+    padding: 2rem 0.2rem 0 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+  #header-nav .navbar-nav li a.nav-link {
+    padding: 1.5rem;
+  }
+}
+
 #header-nav .navbar-nav .dropdown-menu {
   background-color: #496271;
   padding: 0;
@@ -6509,16 +6523,22 @@ a.text-danger:hover {
   background-color: #344752;
   color: #fff;
 }
-#header-nav .search-header input[type='text'] {
+#header-nav .search-header input[type='text'].form-control {
   opacity: 0;
   display: none;
   border: none;
   background-color: #344752;
   color: #fff;
 }
+@media (min-width: 992px) and (max-width: 1299px) {
+  #header-nav .search-header input[type='text'].form-control {
+    padding: 1rem;
+  }
+}
+
 #header-nav .search-header .btn {
   border: none;
-  outline-property: none;
+  outline: none;
   padding: 2rem;
   height: 84px;
   background-color: #344752;
@@ -6526,7 +6546,7 @@ a.text-danger:hover {
 }
 #header-nav .search-header .btn i {
   font-size: 1.6rem;
-  vertical-align: middle;
+  vertical-align: text-top;
 }
 
 /** Content Article **/
@@ -6550,8 +6570,14 @@ h2.post-title {
   height: 29px;
 }
 .post-meta span {
-  padding-right: 8px;
-  margin: 0 8px;
+  padding-right: 0.3rem;
+  margin: 0 0.3rem;
+}
+@media (max-width: 543px) {
+  .post-meta span {
+    padding-right: .2rem;
+    margin: 0.2rem;
+  }
 }
 .post-meta span i {
   font-size: 1.3rem;
