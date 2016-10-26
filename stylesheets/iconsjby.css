@@ -24,7 +24,7 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-diamond:before {
+.icon-about:before {
   content: "\e906";
 }
 .icon-category:before {

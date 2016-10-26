@@ -361,11 +361,11 @@ nav.navigation {
       margin-bottom:1rem;
       i{
         padding-right: 0.8rem;
-        vertical-align: middle;
+        vertical-align: text-top;
         font-size:$icon-size;
       }
     }
-  &.sidebar-about
+  &.about
     {
         p{
           text-align:justify!important;
@@ -387,7 +387,7 @@ nav.navigation {
         }
 
     }
-  &.sidebar-categories{
+  &.categories{
     div.FeaturedImageTax--item{
       position:relative;
       margin-bottom:0.4rem;

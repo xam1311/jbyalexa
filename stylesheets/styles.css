@@ -6759,32 +6759,32 @@ nav.navigation .nav-links i {
 }
 #sidebar section h3.widget-title i {
   padding-right: 0.8rem;
-  vertical-align: middle;
+  vertical-align: text-top;
   font-size: 1.3rem;
 }
-#sidebar section.sidebar-about p {
+#sidebar section.about p {
   text-align: justify !important;
 }
-#sidebar section.sidebar-about p > img {
+#sidebar section.about p > img {
   display: block;
   margin: 0 auto;
 }
-#sidebar section.sidebar-about ul.menu {
+#sidebar section.about ul.menu {
   text-align: center;
 }
-#sidebar section.sidebar-about ul.menu li {
+#sidebar section.about ul.menu li {
   display: inline-block;
   font-size: 1.3rem;
   padding-right: 12px;
 }
-#sidebar section.sidebar-about ul.menu li i {
+#sidebar section.about ul.menu li i {
   color: #a9abac;
 }
-#sidebar section.sidebar-categories div.FeaturedImageTax--item {
+#sidebar section.categories div.FeaturedImageTax--item {
   position: relative;
   margin-bottom: 0.4rem;
 }
-#sidebar section.sidebar-categories div.FeaturedImageTax--item span {
+#sidebar section.categories div.FeaturedImageTax--item span {
   display: inline-block;
   background-color: #344752;
   text-transform: uppercase;

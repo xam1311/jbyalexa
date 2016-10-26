@@ -17,7 +17,6 @@ function jbyalexa_posted_on() {
 		esc_attr( get_the_date( 'c' ) ),
 		esc_html( get_the_date() )
 	);
-
 	$posted_on = sprintf(
 		esc_html_x( '%s', 'post date', 'jbyalexa' ),
 		$time_string
