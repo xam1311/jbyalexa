@@ -70,29 +70,37 @@ $icon-size: 1.3rem;
               margin-left: inherit;
             }
             li {
-              &:hover{
-                background-color:$bg-color-dark;
-              }
-              &.active{
+              &:hover,&.active{
                 background-color:$bg-color-dark;
               }
               a.nav-link{
-              color:$c-text-light;
+              display:inline-block;
               padding:2rem;
               height:84px;
+              color:$c-text-light;
                 /** Tablet ipad **/
                 @media screen and (min-width:  map-get($container-max-widths,'md')) and (max-width: map-get( $grid-breakpoints, 'md')) {
                   padding:2rem 0.2rem 0 0;
                 }
                 @media screen and (max-width:  map-get($container-max-widths,'sm')) {
-                    padding:0;
+                    padding:0.4rem;
+                    height: 40px;
                 }
               }
              }
+             .dropdown-menu{
+               background-color: $bg-color-light;
+               padding:0;
+               margin:0;
+               .dropdown-item{
+                 color:$c-text-light;
+                 &:hover{
+                   background-color: $bg-color-dark;
+                 }
+               }
+             }
         }
-       .dropdown-menu{
-         background-color: $bg-color-light;
-       }
+
        .search-header {
          background-color: $bg-color-dark;
          color: $c-text-light;
@@ -119,39 +127,6 @@ $icon-size: 1.3rem;
      }
 }
 
- #footer-nav, .bg-faded{
-  background-color: $bg-color-light;
- }
-
-#footer-nav{
-  color:$c-text-light;
-  a{
-    color:$c-text-light;
-    text-decoration:none;
-  }
-  footer{
-    padding: 1.5rem 0 1rem 0;
-    @media screen and (max-width:  map-get($container-max-widths,'sm')) {
-        padding:0.4rem 0;
-      }
-  }
-  .footer-social ul {
-    list-style-type: none;
-    padding:inherit;
-    padding-top: 10px;
-    li{
-    font-size:1.3em;
-    display:inline-block;
-    margin-right:15px;
-      i {
-        font-size:$icon-size;
-      }
-    }
-  }
-  .site-info{
-    text-align:right;
-  }
-}
 
 
 /** Content Article **/
@@ -159,7 +134,7 @@ $icon-size: 1.3rem;
 h1.page-title{
   margin-top:2rem;
   color:$color-pink;
-  font-weight:600;
+  font-weight:400;
   text-transform: uppercase;
   text-align:center;
 }
@@ -198,25 +173,27 @@ h2.post-title{
   }
 
 }
+
+/** décalage frontpage 2-3 et 4 articles **/
+.frontpage-vertical{
+  .post-inside{
+    padding:0 .8rem;
+  }
+}
+
+/** css général article **/
 .post-inside{
   .post-thumbnail{
     position:relative;
-    display:flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    figure{
+      margin:0;
+    }
   }
   .post-content{
     background-color:$bg-color-post;
     margin-bottom:1.5rem;
     padding: 1.5rem;
-    h2.entry-title{
+    h1.entry-title,h2.entry-title{
     margin-bottom: 1.5rem;
     }
     .entry-fullcontent{
@@ -233,8 +210,7 @@ h2.post-title{
     .read-more{
       &:hover span{
         display:inline-block;
-        padding-bottom:1px;
-        border-bottom:1px solid #212f37;
+        border-bottom:1px solid $brand-primary;
       }
       .icon-plus-button{
         color:$color-pink;
@@ -246,10 +222,12 @@ h2.post-title{
   }
 }
 
+/** Zone des commentaires formulaire **/
+
 .comments-form{
-  margin:20px 30px;
+  margin:1.5rem 2rem;
   @media screen and (max-width:  map-get($container-max-widths,'sm')) {
-      margin:20px 0;
+      margin:1.5rem 0;
     }
   background-color:#f2f3f3;
   .comment-reply-title{
@@ -259,10 +237,10 @@ h2.post-title{
     font-size:1.4rem;
     i{
       vertical-align: middle;
-      margin-right:10px;
+      margin-right:0.4rem;
     }
   }
-  input[type="submit"]{
+  input[type="submit"], input[type="submit"]:active{
     background-color:$color-button;
     border-color:$color-button;
     color:$c-text-light;
@@ -270,14 +248,13 @@ h2.post-title{
   }
 }
 .comments-area, .comment-respond{
-/*    border:1px solid #dcdcdc;*/
-    padding:30px;
+    padding:2rem;
     h3.comments-title, h3.comment-reply-title{
       color:$color-pink;
       text-align:center;
       text-transform: uppercase;
     }
-    input[type="submit"]{
+    input[type="submit"], input[type="submit"]:active{
       background-color:$color-button;
       border-color:$color-button;
       color:$c-text-light;
@@ -355,7 +332,6 @@ nav.navigation {
     }
     h3.widget-title {
       text-transform: uppercase;
-      font-size:1.2rem;
       color:$color-pink;
       text-align: center;
       margin-bottom:1rem;
@@ -408,3 +384,38 @@ nav.navigation {
   }
 }
  }
+
+/** zone footer template **/
+ #footer-nav, .bg-faded{
+  background-color: $bg-color-light;
+ }
+
+#footer-nav{
+  color:$c-text-light;
+  a{
+    color:$c-text-light;
+    text-decoration:none;
+  }
+  footer{
+    padding: 1.5rem 0 1rem 0;
+    @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+        padding:0.4rem 0;
+      }
+  }
+  .footer-social ul {
+    list-style-type: none;
+    padding:inherit;
+    padding-top: 10px;
+    li{
+    font-size:1.3em;
+    display:inline-block;
+    margin-right:15px;
+      i {
+        font-size:$icon-size;
+      }
+    }
+  }
+  .site-info{
+    text-align:right;
+  }
+}

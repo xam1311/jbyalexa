@@ -42,13 +42,13 @@ $imgSize = get_query_var('img-size');
 
 
 					<div class="post-content entry-content">
-					<h2 class="post-title entry-title">
+					<h1 class="post-title entry-title">
 						<?php if( is_home() or is_front_page() or is_category()): ?>
 						<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 						<?php else:?>
 							<?php the_title(); ?>
 						<?php endif; ?>
-					</h2><!--/.post-title-->
+					</h1><!--/.post-title-->
 
 						<?php if( is_home() or is_front_page() or is_category()): ?>
 						<div class="post-entry entry-excerpt">
