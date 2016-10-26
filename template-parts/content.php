@@ -19,7 +19,7 @@ $imgSize = get_query_var('img-size');
 								<img src="<?php the_post_thumbnail_url('post-'.$imgSize.'') ?>" class="attachment-post-<?php echo $imgSize; ?> wp-post-image img-fluid"/>
 								</a>
 							<?php else:
-									the_post_thumbnail('post-'.$imgSize.'', array('class' => 'attachment-post-'.$imgSize.' wp-post-image responsive-full', 'title' => get_the_title()));
+									the_post_thumbnail('post-'.$imgSize.'', array('class' => 'attachment-post-'.$imgSize.' wp-post-image img-fluid', 'title' => get_the_title()));
 							 endif; ?>
 			<?php	else: ?>
 						<?php if( is_home() or is_front_page() or is_category()): ?>
