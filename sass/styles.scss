@@ -15,28 +15,6 @@ $color-pink:#e85898;
 $color-button:#e85697;
 $icon-size: 1.3rem;
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:   $c-text-light;
-    text-transform:uppercase;
-    padding-left:2.1rem;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:     $c-text-light;
-   text-transform:uppercase;
-   padding-left:2.1rem;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:     $c-text-light;
-   text-transform:uppercase;
-   padding-left:2.1rem;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:     $c-text-light;
-   text-transform:uppercase;
-   padding-left:2.1rem;
-}
 
 /**  Header **/
 
@@ -67,7 +45,7 @@ $icon-size: 1.3rem;
         }
       }
 
-
+      $heightMenu : 84;
       .navbar-nav {
             .nav-item + .nav-item{
               margin-left: inherit;
@@ -79,11 +57,11 @@ $icon-size: 1.3rem;
               a.nav-link{
               display:inline-block;
               padding:2rem;
-              height:84px;
+              height:$heightMenu+px;
               color:$c-text-light;
                 @include media-breakpoint-only(xs) {
                   padding:0.4rem;
-                  height: 40px;
+                  height: $heightMenu/2+px;
                 }
                 @include media-breakpoint-only(md){
                   padding:2rem 0.2rem 0 0;
@@ -113,13 +91,41 @@ $icon-size: 1.3rem;
          color: $c-text-light;
          input[type='text'].form-control{
            opacity:0;
-           display:none;
            border:none;
            background-color: $bg-color-dark;
            color: $c-text-light;
+
+           position:absolute;
+           bottom:-84px;
+           height:$heightMenu+px;
+           padding:2rem 0 2rem 2.2rem;
+           right:0px;
+           z-index:1500;
+           width:100%;
            @include media-breakpoint-only(lg) {
-            padding:1rem;
+          padding:1rem;
            }
+
+           &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+               color:   $c-text-light;
+               text-transform:uppercase;
+
+           }
+           &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+              color:     $c-text-light;
+              text-transform:uppercase;
+              opacity:  1;
+           }
+           &::-moz-placeholder { /* Mozilla Firefox 19+ */
+              color:     $c-text-light;
+              text-transform:uppercase;
+              opacity:  1;
+           }
+           &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color:     $c-text-light;
+              text-transform:uppercase;
+           }
+
          }
          .btn {
            border:none;

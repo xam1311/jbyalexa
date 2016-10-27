@@ -18,7 +18,6 @@ get_header(); ?>
 
 		<?php
 		if ( have_posts() ) : ?>
-		<div class="row">
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="entry-title page-title">', '</h1>' );

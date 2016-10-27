@@ -20,7 +20,6 @@ get_header(); ?>
 	<div id="primary" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 <?php endif; ?>
 	<main id="main" class="site-main" role="main">
-     <div class="row">
 			<?php
 			while ( have_posts() ) : the_post();
 				$imgSize = 'big';	set_query_var( 'img-size', $imgSize );
