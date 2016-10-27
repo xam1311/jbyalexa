@@ -21,10 +21,9 @@ get_header(); ?>
 <?php endif; ?>
 	<main id="main" class="site-main" role="main">
      <div class="row">
-
 			<?php
 			while ( have_posts() ) : the_post();
-				$imgSize = 'big';	set_query_var( 'img-size', $imgSize ); 
+				$imgSize = 'big';	set_query_var( 'img-size', $imgSize );
 				get_template_part( 'template-parts/content', 'page' );
 
 				// If comments are open or we have at least one comment, load up the comment template.
