@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-18 15:26+0200\n"
-"PO-Revision-Date: 2016-10-18 15:27+0200\n"
+"PO-Revision-Date: 2016-10-27 16:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -110,11 +110,11 @@ msgstr ""
 
 #: footer.php:30
 msgid "Fan Alexa's jewelry"
-msgstr ""
+msgstr "Fan des bijoux  J by Alexa ?"
 
 #: footer.php:30
 msgid "FOLLOW ME !"
-msgstr "Suivez moi !"
+msgstr "Suivez-moi !"
 
 #: footer.php:45
 msgid "Copyright &#xa9;"

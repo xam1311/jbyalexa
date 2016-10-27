@@ -129,18 +129,18 @@ function jbyalexa_comment($comment, $args, $depth) {
     }
 		$args['avatar_size'] = 64;
 
-		if($comment->comment_author == 'admin'):
-
-		$classAdmin = '';
-		else:
+		if($comment->comment_author == 'jbyalexa'):
 
 		$classAdmin = ' adminComment';
+		else:
+
+		$classAdmin = ' ';
 
 		endif;
     ?>
-    <<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? ''.$classAdmin : 'parent'.$classAdmin ) ?> id="comment-<?php comment_ID() ?>">
+    <<?php echo $tag ?> <?php comment_class( empty( $args['has_children'] ) ? '': 'parent' ) ?> id="comment-<?php comment_ID() ?>">
     <?php if ( 'div' != $args['style'] ) : ?>
-    <div id="div-comment-<?php comment_ID() ?>" class="comment-body row">
+    <div id="div-comment-<?php comment_ID() ?>" class="comment-body row <?php echo $classAdmin;?>">
     <?php endif; ?>
     <div class="comment-card-left col-md-4 col-lg-4">
 

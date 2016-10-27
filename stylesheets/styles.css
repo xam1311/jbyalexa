@@ -539,15 +539,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h2, .h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h3, .h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 h4, .h4 {
@@ -6684,12 +6684,12 @@ h2.post-title {
   list-style-type: none;
   padding: 1rem;
 }
-.comment-list li.adminComment {
-  background-color: #f2f3f3;
-}
 .comment-list li > ul.children li {
   padding: 0;
   padding-top: 1rem;
+}
+.comment-list li .adminComment {
+  background-color: #f2f3f3;
 }
 .comment-list .comment-body {
   border-bottom: 1px solid #dcdcdc;
