@@ -6412,9 +6412,12 @@ a.text-danger:hover {
   }
 }
 
+body {
+  padding-top: 70px;
+}
+
 /**  Header **/
 #header-nav {
-  background-color: #496271;
   text-transform: uppercase;
 }
 #header-nav .navbar {
@@ -6423,6 +6426,11 @@ a.text-danger:hover {
 }
 #header-nav .navbar button.navbar-toggler {
   color: #fff;
+}
+#header-nav .navbar #exCollapsingNavbar2 {
+  background: #496271;
+  /* The Fallback */
+  background: rgba(73, 98, 113, 0.5);
 }
 #header-nav .navbar-brand {
   margin: 1rem 0 0.4rem 2.5rem;
@@ -6791,12 +6799,9 @@ nav.navigation .nav-links i {
 }
 
 /** zone footer template **/
-#footer-nav, .bg-faded {
-  background-color: #496271;
-}
-
 #footer-nav {
   color: #fff;
+  background-color: #496271;
 }
 #footer-nav a {
   color: #fff;

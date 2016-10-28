@@ -21,9 +21,10 @@
 
 <body <?php body_class(); ?> id="main-body">
 <div class="container-fluid" id="header-nav">
-<div class="container">
+
       <?php if ( has_nav_menu( 'primary' )  ) : ?>
-      <nav class="navbar navbar-dark bg-faded">
+      <nav class="navbar navbar-dark bg-faded navbar-fixed-top">
+      <div class="container">
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
           &#9776;
         </button>
@@ -50,9 +51,10 @@
       			?>
 
         </div>
+      </div><!-- fin de .container-->
       </nav>
       <?php endif; ?>
-    </div><!-- fin de .container-->
+
 </div>
 <div class="container">
   <div class="row">
