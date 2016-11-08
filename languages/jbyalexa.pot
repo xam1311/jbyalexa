@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-18 15:19+0200\n"
+"POT-Creation-Date: 2016-11-08 10:42+0100\n"
 "PO-Revision-Date: 2016-10-17 10:24+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,31 +23,31 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:17
+#: 404.php:21
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:21
+#: 404.php:25
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
 
-#: 404.php:33
+#: 404.php:37
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-#: 404.php:51
+#: 404.php:55
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: archive.php:47 home.php:77 index.php:54 search.php:44 single.php:31
+#: archive.php:46 home.php:73 index.php:55 search.php:44 single.php:32
 msgid "Previous"
 msgstr ""
 
-#: archive.php:47 home.php:77 index.php:54 search.php:44 single.php:31
+#: archive.php:46 home.php:73 index.php:55 search.php:44 single.php:32
 msgid "Next"
 msgstr ""
 
@@ -65,8 +65,23 @@ msgstr ""
 
 #: comments.php:53
 msgid ""
-"<p>Don't be shy for comment, it's easy you just have to  write in the input "
-"with “*”. Your email address will not be published.</p>"
+"Don't be shy for comment, it's easy you just have to  write in the input "
+"with “*”. Your email address will not be published."
+msgstr ""
+
+#: comments.php:56
+msgid "Your comment"
+msgstr ""
+
+#: comments.php:63
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:68
+msgid "Post a comment"
 msgstr ""
 
 #: comments.php:81
@@ -145,42 +160,50 @@ msgstr ""
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: header.php:34
+#: header.php:35
 msgid "Search"
 msgstr ""
 
-#: inc/customizer.php:33
+#: inc/customizer.php:32 inc/customizer.php:38
 msgid "Read next"
 msgstr ""
 
-#: inc/template-tags.php:22
+#: inc/template-tags.php:21
 #, php-format
 msgid "%s"
 msgstr ""
 
+#: inc/template-tags.php:30
+msgid "Click to see post from"
+msgstr ""
+
+#: inc/template-tags.php:37
+msgid "Please comment !"
+msgstr ""
+
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:51 inc/template-tags.php:57
+#: inc/template-tags.php:50 inc/template-tags.php:56
 msgid ", "
 msgstr ""
 
-#: inc/template-tags.php:53
+#: inc/template-tags.php:52
 #, php-format
 msgid "Posted in %1$s"
 msgstr ""
 
-#: inc/template-tags.php:59
+#: inc/template-tags.php:58
 #, php-format
 msgid "Tagged %1$s"
 msgstr ""
 
 #. translators: %s: post title
-#: inc/template-tags.php:66
+#: inc/template-tags.php:65
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:73 template-parts/content-page.php:33
+#: inc/template-tags.php:72 template-parts/content-page.php:33
 #, php-format
 msgid "Edit %s"
 msgstr ""
@@ -216,6 +239,6 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content.php:27 template-parts/content.php:32
+#: template-parts/content.php:28 template-parts/content.php:33
 msgid "no picture"
 msgstr ""
