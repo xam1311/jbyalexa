@@ -176,17 +176,18 @@ h2.post-title{
   position: absolute;
   bottom:0;
   background-color: $c-text-light;
-  height:29px;
+  height:30px;
   span{
     padding-right: 0.3rem;
     margin:0 0.3rem;
+    line-height: 30px;
     @include media-breakpoint-only(xs) {
       padding-right:.2rem;
       margin:0.2rem;
     }
     i{
       font-size:$icon-size;
-      vertical-align: middle;
+      vertical-align: text-top;
     }
     time{
       margin-left: 0.2rem;
@@ -229,13 +230,18 @@ h2.post-title{
     margin-bottom: 1.5rem;
     }
     .entry-fullcontent{
-      .alignright{
-        float:right;
-        margin-left:0.4rem;
+      img.alignright{
+        float:right!important;
+        margin-left:0.8rem;
       }
-      .alignleft{
-        float:left;
-        margin-right:0.4rem;
+      img.aligncenter{
+        display: block;
+        margin-right: auto!important;
+        margin-left: auto!important;
+      }
+      img.alignleft{
+        float:left!important;
+        margin-right:0.8rem;
       }
     }
 
@@ -253,7 +259,24 @@ h2.post-title{
   }
   }
 }
-
+.page{
+  .entry-content{
+    padding:0 .8rem;
+    img.alignright{
+      float:right!important;
+      margin-left:0.4rem;
+    }
+    img.aligncenter{
+      display:block;
+      margin-right: auto!important;
+      margin-left: auto!important;
+    }
+    img.alignleft{
+      float:left!important;
+      margin-right:0.4rem;
+    }
+  }
+}
 /** Zone des commentaires formulaire **/
 
 .comments-form{
@@ -377,7 +400,6 @@ nav.navigation {
   &.about
     {
         p{
-          text-align:justify!important;
           &>img{
             display:block;
             margin:0 auto;
