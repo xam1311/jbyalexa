@@ -230,6 +230,9 @@ h2.post-title{
     margin-bottom: 1.5rem;
     }
     .entry-fullcontent{
+      img{
+        max-width: 100%;
+      }
       img.alignright{
         float:right!important;
         margin-left:0.8rem;

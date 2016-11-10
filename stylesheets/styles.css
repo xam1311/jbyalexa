@@ -6625,6 +6625,9 @@ h2.post-title {
 .post-inside .post-content h1.entry-title, .post-inside .post-content h2.entry-title {
   margin-bottom: 1.5rem;
 }
+.post-inside .post-content .entry-fullcontent img {
+  max-width: 100%;
+}
 .post-inside .post-content .entry-fullcontent img.alignright {
   float: right !important;
   margin-left: 0.8rem;

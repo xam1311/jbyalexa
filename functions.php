@@ -26,6 +26,7 @@ function jbyalexa_setup() {
 
 
 	if ( function_exists( 'add_theme_support' ) ) :
+
 				// Add default posts and comments RSS feed links to head.
 				add_theme_support( 'automatic-feed-links' );
 
@@ -42,11 +43,15 @@ function jbyalexa_setup() {
 				 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 				 */
 				add_theme_support( 'post-thumbnails' );
+
 				set_post_thumbnail_size( 400, 260, true ); // default Post Thumbnail dimensions (cropped)
-			  // additional image sizes
+			  	// additional image sizes
 				add_image_size( 'post-big', 930, 593, true );
+				add_image_size( 'img-inside', 882,588,true);
+				add_image_size( 'img-inside-2', 657, 438, true);
 				add_image_size( 'post-medium', 465, 297, true );
-				add_image_size( 'post-big-inside', 882, 650, true );
+				add_image_size( 'img-inside-3', 432, 288, true);
+				add_image_size( 'img-inside-4', 272, 181, true);
 			    add_image_size( 'category-thumb', 269, 134, true );
 
 				// This theme uses wp_nav_menu() in one location.
@@ -91,9 +96,10 @@ function jbyalexa_setup() {
  
 				function my_custom_sizes( $sizes ) {
 						return array_merge( $sizes, array(
-							'post-big-inside' => __( 'post-big-inside' ),
+							'img-inside' => __( 'img-inside' ),
 						) );
 					}
+
 		endif;
 
 
@@ -101,61 +107,6 @@ function jbyalexa_setup() {
 endif;
 add_action( 'after_setup_theme', 'jbyalexa_setup' );
 
-/**
-* filter function to force wordpress to add our custom srcset values
-* @param array  $sources {
-*     One or more arrays of source data to include in the 'srcset'.
-*
-*     @type type array $width {
-*          @type type string $url        The URL of an image source.
-*          @type type string $descriptor The descriptor type used in the image candidate string,
-*                                        either 'w' or 'x'.
-*          @type type int    $value      The source width, if paired with a 'w' descriptor or a
-*                                        pixel density value if paired with an 'x' descriptor.
-*     }
-* }
-* @param array  $size_array    Array of width and height values in pixels (in that order).
-* @param string $image_src     The 'src' of the image.
-* @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
-* @param int    $attachment_id Image attachment ID.
-
-* @author: Aakash Dodiya
-* @website: http://www.developersq.com
-*/
-/*add_filter( 'wp_calculate_image_srcset', 'dq_add_custom_image_srcset', 10, 5 );
-function dq_add_custom_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
-			
-	// image base name		
-	$image_basename = wp_basename( $image_meta['file'] );
-	// upload directory info array
-	$upload_dir_info_arr = wp_get_upload_dir();
-	// base url of upload directory
-	$baseurl = $upload_dir_info_arr['baseurl'];
-	
-	// Uploads are (or have been) in year/month sub-directories.
-	if ( $image_basename !== $image_meta['file'] ) {
-		$dirname = dirname( $image_meta['file'] );
-		
-		if ( $dirname !== '.' ) {
-			$image_baseurl = trailingslashit( $baseurl ) . $dirname; 
-		}
-	}
-
-	$image_baseurl = trailingslashit( $image_baseurl );
-	// check whether our custom image size exists in image meta	
-	if( array_key_exists('post-big-inside', $image_meta['sizes'] ) ){
-
-		// add source value to create srcset
-		$sources[ $image_meta['sizes']['post-big-inside']['width'] ] = array(
-				 'url'        => $image_baseurl .  $image_meta['sizes']['post-big-inside']['file'],
-				 'descriptor' => 'w',
-				 'value'      => $image_meta['sizes']['post-big-inside']['width'],
-		);
-	}
-	
-	//return sources with new srcset value
-	return $sources;
-}*/
 
 /**
  * Register widget area.
@@ -173,9 +124,7 @@ function jbyalexa_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
-
 	add_filter( 'wpiw_img_class', 'my_instagram_class' );
-
 	function my_instagram_class( $classes ) {
 	    $classes = "img-fluid";
 	    return $classes;
@@ -183,11 +132,13 @@ function jbyalexa_widgets_init() {
 }
 add_action( 'widgets_init', 'jbyalexa_widgets_init' );
 
+// Ajout support plugin Woo commerce
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+// Modification template comment
 function jbyalexa_comment($comment, $args, $depth) {
 
     if ( 'div' === $args['style'] ) {
@@ -256,15 +207,17 @@ function jbyalexa_scripts() {
 	wp_enqueue_script( 'jbyalexa-tether', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'jbyalexa-bootstrap', get_template_directory_uri() . '/javascripts/bootstrap.min.js', array('jquery'), '20151215', true );
  	wp_enqueue_script( 'jbyalexa-main', get_template_directory_uri() . '/javascripts/main.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'jbyalexa-picturefill', get_template_directory_uri() . '/javascripts/picturefill.min.js', array('jquery'), '20151215', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
 }
 add_action( 'wp_enqueue_scripts', 'jbyalexa_scripts' );
 
 
 function jbyalexa_add_favicon(){ ?>
-    <!-- Custom Favicons -->
+ <!-- Custom Favicons -->
 		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/stylesheets/img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri();?>/stylesheets/img/favicon-16x16.png" sizes="16x16" />
 		  <?php }
