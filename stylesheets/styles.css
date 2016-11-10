@@ -6627,6 +6627,8 @@ h2.post-title {
 }
 .post-inside .post-content .entry-fullcontent img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 .post-inside .post-content .entry-fullcontent img.alignright {
   float: right !important;

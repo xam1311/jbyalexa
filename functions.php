@@ -47,11 +47,11 @@ function jbyalexa_setup() {
 				set_post_thumbnail_size( 400, 260, true ); // default Post Thumbnail dimensions (cropped)
 			  	// additional image sizes
 				add_image_size( 'post-big', 930, 593, true );
-				add_image_size( 'img-inside', 882,588,true);
-				add_image_size( 'img-inside-2', 657, 438, true);
+				add_image_size( 'img-inside', 882,556,true);
+				add_image_size( 'img-inside-2', 657, 421, true);
 				add_image_size( 'post-medium', 465, 297, true );
-				add_image_size( 'img-inside-3', 432, 288, true);
-				add_image_size( 'img-inside-4', 272, 181, true);
+				add_image_size( 'img-inside-3', 432, 276, true);
+				add_image_size( 'img-inside-4', 272, 174, true);
 			    add_image_size( 'category-thumb', 269, 134, true );
 
 				// This theme uses wp_nav_menu() in one location.
