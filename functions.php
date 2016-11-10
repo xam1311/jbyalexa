@@ -46,7 +46,8 @@ function jbyalexa_setup() {
 			  // additional image sizes
 				add_image_size( 'post-big', 930, 593, true );
 				add_image_size( 'post-medium', 465, 297, true );
-			  add_image_size( 'category-thumb', 269, 134, true );
+				add_image_size( 'post-big-inside', 882, 650, true );
+			    add_image_size( 'category-thumb', 269, 134, true );
 
 				// This theme uses wp_nav_menu() in one location.
 				register_nav_menus( array(
@@ -83,12 +84,78 @@ function jbyalexa_setup() {
 					'default-color' => 'ffffff',
 					'default-image' => '',
 				) ) );
+
+				// Add in selection media the new size add_image_size
+
+				add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+ 
+				function my_custom_sizes( $sizes ) {
+						return array_merge( $sizes, array(
+							'post-big-inside' => __( 'post-big-inside' ),
+						) );
+					}
 		endif;
 
 
 }
 endif;
 add_action( 'after_setup_theme', 'jbyalexa_setup' );
+
+/**
+* filter function to force wordpress to add our custom srcset values
+* @param array  $sources {
+*     One or more arrays of source data to include in the 'srcset'.
+*
+*     @type type array $width {
+*          @type type string $url        The URL of an image source.
+*          @type type string $descriptor The descriptor type used in the image candidate string,
+*                                        either 'w' or 'x'.
+*          @type type int    $value      The source width, if paired with a 'w' descriptor or a
+*                                        pixel density value if paired with an 'x' descriptor.
+*     }
+* }
+* @param array  $size_array    Array of width and height values in pixels (in that order).
+* @param string $image_src     The 'src' of the image.
+* @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
+* @param int    $attachment_id Image attachment ID.
+
+* @author: Aakash Dodiya
+* @website: http://www.developersq.com
+*/
+/*add_filter( 'wp_calculate_image_srcset', 'dq_add_custom_image_srcset', 10, 5 );
+function dq_add_custom_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
+			
+	// image base name		
+	$image_basename = wp_basename( $image_meta['file'] );
+	// upload directory info array
+	$upload_dir_info_arr = wp_get_upload_dir();
+	// base url of upload directory
+	$baseurl = $upload_dir_info_arr['baseurl'];
+	
+	// Uploads are (or have been) in year/month sub-directories.
+	if ( $image_basename !== $image_meta['file'] ) {
+		$dirname = dirname( $image_meta['file'] );
+		
+		if ( $dirname !== '.' ) {
+			$image_baseurl = trailingslashit( $baseurl ) . $dirname; 
+		}
+	}
+
+	$image_baseurl = trailingslashit( $image_baseurl );
+	// check whether our custom image size exists in image meta	
+	if( array_key_exists('post-big-inside', $image_meta['sizes'] ) ){
+
+		// add source value to create srcset
+		$sources[ $image_meta['sizes']['post-big-inside']['width'] ] = array(
+				 'url'        => $image_baseurl .  $image_meta['sizes']['post-big-inside']['file'],
+				 'descriptor' => 'w',
+				 'value'      => $image_meta['sizes']['post-big-inside']['width'],
+		);
+	}
+	
+	//return sources with new srcset value
+	return $sources;
+}*/
 
 /**
  * Register widget area.
@@ -116,7 +183,10 @@ function jbyalexa_widgets_init() {
 }
 add_action( 'widgets_init', 'jbyalexa_widgets_init' );
 
-
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
 
 function jbyalexa_comment($comment, $args, $depth) {
 
