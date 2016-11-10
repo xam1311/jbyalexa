@@ -243,6 +243,12 @@ h2.post-title{
         float:left!important;
         margin-right:0.8rem;
       }
+      a{
+        color:$color-pink;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
     }
 
     .read-more{
@@ -471,4 +477,22 @@ nav.navigation {
   .site-info{
     text-align:right;
   }
+}
+
+/** WooCommerce **/
+.form-row.woocommerce-invalid{
+  .chzn-single,
+  .chzn-drop,
+  input.input-text,
+  select {
+    border:1px solid red;
+}
+}
+.form-row.woocommerce-validated {
+  .chzn-single,
+  .chzn-drop,
+  input.input-text,
+  select {
+    border:1px solid green;
+}
 }
