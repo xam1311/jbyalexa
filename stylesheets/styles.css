@@ -6413,7 +6413,7 @@ a.text-danger:hover {
 }
 
 body {
-  padding-top: 52px;
+  padding-top: 85px;
 }
 
 /**  Header **/
@@ -6775,7 +6775,7 @@ nav.navigation .nav-links i {
 /** Sidebar **/
 #sidebar {
   border-left: 1px solid #d0d0d0;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 #sidebar section {
   border-bottom: 1px dotted #496271;

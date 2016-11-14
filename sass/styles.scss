@@ -25,7 +25,7 @@ $icon-size: 1.3rem;
     background: rgba($color, $opacity);
 }
 
-body { padding-top: 52px; }
+body { padding-top: 85px; }
 
 /**  Header **/
 
@@ -389,7 +389,7 @@ nav.navigation {
 
 #sidebar{
   border-left:1px solid #d0d0d0;
-  padding: 1.5rem;
+  padding:0 1.5rem;
   section{
     border-bottom: 1px dotted $bg-color-light;
     padding:1.5rem 0;
