@@ -6415,6 +6415,11 @@ a.text-danger:hover {
 body {
   padding-top: 85px;
 }
+@media screen and (max-width: 576px) {
+  body {
+    padding-top: 55px;
+  }
+}
 
 /**  Header **/
 #header-nav {
@@ -6721,6 +6726,11 @@ h2.post-title {
 .comments-area, .comment-respond {
   padding: 2rem;
 }
+@media screen and (max-width: 576px) {
+  .comments-area, .comment-respond {
+    padding: 0;
+  }
+}
 .comments-area h3.comments-title, .comments-area h3.comment-reply-title, .comment-respond h3.comments-title, .comment-respond h3.comment-reply-title {
   color: #e85898;
   text-align: center;
@@ -6758,6 +6768,12 @@ h2.post-title {
 .comment-list .comment-body .comment-card-right {
   border-left: 1px solid #dcdcdc;
   padding-left: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .comment-list .comment-body .comment-card-right {
+    border: none;
+    padding-left: 0;
+  }
 }
 .comment-list .comment-body a.comment-reply-link {
   display: inline-block;

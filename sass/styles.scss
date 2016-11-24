@@ -25,7 +25,13 @@ $icon-size: 1.3rem;
     background: rgba($color, $opacity);
 }
 
-body { padding-top: 85px; }
+body { 
+  padding-top: 85px;
+   @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+           padding-top:55px;
+   }
+  
+   }
 
 /**  Header **/
 
@@ -326,6 +332,9 @@ h2.post-title{
 }
 .comments-area, .comment-respond{
     padding:2rem;
+     @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+           padding:0;
+          }
     h3.comments-title, h3.comment-reply-title{
       color:$color-pink;
       text-align:center;
@@ -363,6 +372,10 @@ h2.post-title{
         .comment-card-right{
           border-left:1px solid #dcdcdc;
           padding-left:1rem;
+           @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+           border:none;
+           padding-left:0;
+          }
         }
         a.comment-reply-link{
           display:inline-block;
