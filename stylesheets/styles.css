@@ -6634,6 +6634,13 @@ h2.post-title {
   float: right !important;
   margin-left: 0.8rem;
 }
+@media screen and (max-width: 576px) {
+  .post-inside .post-content .entry-fullcontent img.alignright {
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
 .post-inside .post-content .entry-fullcontent img.aligncenter {
   display: block;
   margin-right: auto !important;
@@ -6642,6 +6649,13 @@ h2.post-title {
 .post-inside .post-content .entry-fullcontent img.alignleft {
   float: left !important;
   margin-right: 0.8rem;
+}
+@media screen and (max-width: 576px) {
+  .post-inside .post-content .entry-fullcontent img.alignleft {
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .post-inside .post-content .entry-fullcontent a {
   color: #e85898;

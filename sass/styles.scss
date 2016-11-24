@@ -238,6 +238,12 @@ h2.post-title{
       img.alignright{
         float:right!important;
         margin-left:0.8rem;
+        
+         @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+           float:none!important;;
+           display: block;
+           margin:0 auto;
+          }
       }
       img.aligncenter{
         display: block;
@@ -247,6 +253,11 @@ h2.post-title{
       img.alignleft{
         float:left!important;
         margin-right:0.8rem;
+         @media screen and (max-width:  map-get($container-max-widths,'sm')) {
+           float:none!important;;
+           display: block;
+           margin:0 auto;
+          }
       }
       a{
         color:$color-pink;
