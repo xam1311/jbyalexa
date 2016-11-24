@@ -32,7 +32,6 @@ function jbyalexa_posted_on() {
 	endforeach;
 
 	echo '</span>';
-
 	echo '<span class="meta-comments">';
 	echo '<a href="'.get_comments_link().'" title="'.__('Please comment !','jbyalexa').'"><i class="icon-communication"></i> ' . $comments_count->approved . '</span></a>';
 
