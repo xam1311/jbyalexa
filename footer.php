@@ -26,12 +26,12 @@
 					<footer>
 								<div class="container">
 										<div class="row">
-														<div class="col-lg-2 col-md-2 col-xs-6">
+														<div class="col-lg-2 col-md-2 col-xs-5">
 														<p><?php _e('Fan Alexa\'s jewelry','jbyalexa'); ?><br/><strong><?php _e('FOLLOW ME !','jbyalexa'); ?></strong></p>
 
 														</div>
 
-														<div class="col-lg-4 col-md-4 col-xs-6 footer-social">
+														<div class="col-lg-4 col-md-4 col-xs-7 footer-social">
 																	<?php  wp_nav_menu([
 										                    'menu'            => 'social',
 										                    'theme_location'  => 'social',
